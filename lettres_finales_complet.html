@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>האותיות הסופיות · Les lettres finales en hébreu</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#2C6E9E;--blue-l:#dbeaf6;--blue-d:#1a4d72;
+  --green:#2A7A4B;--green-l:#d5ede0;--green-d:#1a5232;
+  --purple:#5B4FA0;--purple-l:#e8e4f8;--purple-d:#3d3470;
+  --amber:#9A6B00;--amber-l:#fef0cc;--amber-d:#6b4900;
+  --coral:#B84040;--coral-l:#fce8e8;--coral-d:#7a2a2a;
+  --teal:#1F7A6E;--teal-l:#d4f0ec;--teal-d:#135048;
+  --bg:#f8f6f1;--bg2:#efecea;--bg3:#e5e2dc;--bg-card:#fff;
+  --text:#18181a;--text2:#52524e;--text3:#96968f;
+  --border:#dedad2;--border2:#c8c4ba;
+  --shadow:0 2px 10px rgba(0,0,0,.07);
+  --shadow-md:0 4px 20px rgba(0,0,0,.1);
+  --r:8px;--r-md:12px;--r-lg:16px;--r-xl:22px;
+}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+
+/* ── HERO HEADER ── */
+.hero{background:linear-gradient(135deg,#1a3a52 0%,#2C6E9E 60%,#3d8fbf 100%);color:#fff;padding:2rem 1.5rem 0;text-align:center}
+.hero-inner{max-width:900px;margin:0 auto}
+.hero h1{font-size:26px;font-weight:700;letter-spacing:-.3px;margin-bottom:.3rem}
+.hero h1 span{opacity:.7;font-weight:400;font-size:20px}
+.hero p{font-size:13px;opacity:.75;margin-bottom:1.5rem}
+
+/* ── NAV TABS ── */
+.nav-tabs-wrap{background:rgba(0,0,0,.2);border-radius:var(--r-lg) var(--r-lg) 0 0;padding:.4rem .4rem 0;display:flex;gap:4px;max-width:900px;margin:0 auto}
+.nav-tab{padding:.65rem 1.1rem;font-size:13px;font-weight:500;color:rgba(255,255,255,.65);cursor:pointer;border-radius:var(--r-md) var(--r-md) 0 0;border:none;background:transparent;transition:all .18s;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.nav-tab:hover{color:#fff;background:rgba(255,255,255,.1)}
+.nav-tab.active{color:var(--text);background:var(--bg);font-weight:600}
+.nav-tab .tab-icon{font-size:15px}
+.nav-tab .tab-num{font-size:10px;background:rgba(255,255,255,.25);border-radius:20px;padding:1px 6px;font-weight:700}
+.nav-tab.active .tab-num{background:var(--blue-l);color:var(--blue-d)}
+
+/* ── PAGES ── */
+.page{display:none;max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+.page.active{display:block}
+
+/* ── SECTION HEADER ── */
+.sec-head{text-align:center;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:2px solid var(--border)}
+.sec-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;padding:4px 14px;border-radius:20px;letter-spacing:.06em;margin-bottom:.75rem;text-transform:uppercase}
+.sec-badge-blue{background:var(--blue-l);color:var(--blue-d)}
+.sec-badge-green{background:var(--green-l);color:var(--green-d)}
+.sec-badge-purple{background:var(--purple-l);color:var(--purple-d)}
+.sec-badge-amber{background:var(--amber-l);color:var(--amber-d)}
+.sec-badge-coral{background:var(--coral-l);color:var(--coral-d)}
+.sec-title{font-size:22px;font-weight:700;color:var(--text);margin-bottom:.4rem}
+.sec-sub{font-size:13px;color:var(--text2)}
+
+/* ── PARA COLORS ── */
+.pc-P1{background:#dbeaf6;color:#1a4d72}
+.pc-P2{background:#d5ede0;color:#1a5232}
+.pc-P3{background:#e8e4f8;color:#3d3470}
+.pc-P4{background:#fef0cc;color:#6b4900}
+.pc-P5{background:#fce8e8;color:#7a2a2a}
+.pc-P6{background:#d4f0ec;color:#135048}
+.pc-P7{background:#f0e6fa;color:#4a2570}
+.pc-P8{background:#e6f4d4;color:#2a4a14}
+
+/* ── COMMON ── */
+.pill{font-size:12px;padding:5px 14px;border-radius:20px;border:1.5px solid var(--border2);background:var(--bg-card);color:var(--text2);cursor:pointer;transition:all .15s;font-weight:500}
+.pill:hover{background:var(--bg2);border-color:var(--border2)}
+.pill.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.btn{font-size:13px;font-weight:500;padding:8px 20px;border-radius:var(--r);border:1.5px solid var(--border2);background:var(--bg-card);color:var(--text);cursor:pointer;transition:all .15s}
+.btn:hover{background:var(--bg2);border-color:var(--blue)}
+.btn-primary{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 2px 6px rgba(44,110,158,.3)}
+.btn-primary:hover{background:var(--blue-d);border-color:var(--blue-d)}
+.btn-success{background:var(--green);color:#fff;border-color:var(--green)}
+.btn-success:hover{background:var(--green-d)}
+.filters-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1rem;align-items:center}
+.filter-label{font-size:12px;color:var(--text2);font-weight:600;margin-right:2px}
+.progress-track{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.progress-fill{height:6px;border-radius:3px;transition:width .35s ease}
+.pf-blue{background:var(--blue)}
+.pf-green{background:var(--green)}
+.pf-purple{background:var(--purple)}
+.pf-amber{background:var(--amber)}
+
+/* ── MODULE 1 ── */
+.para-card{margin-bottom:1.25rem;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border)}
+.para-card-head{display:flex;align-items:center;justify-content:space-between;padding:.7rem 1.1rem;background:var(--bg2);border-bottom:1px solid var(--border);flex-wrap:wrap;gap:8px}
+.para-head-left{display:flex;align-items:center;gap:10px}
+.para-tag{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px}
+.para-title-txt{font-size:13px;color:var(--text2);font-style:italic}
+.audio-group{display:flex;gap:5px;flex-wrap:wrap}
+.aud-btn{display:flex;align-items:center;gap:4px;font-size:12px;font-weight:500;padding:4px 12px;border-radius:20px;border:1.5px solid var(--border2);background:var(--bg-card);color:var(--text2);cursor:pointer;transition:all .15s;white-space:nowrap}
+.aud-btn:hover{background:var(--bg2)}
+.aud-btn.playing{color:var(--blue-d);border-color:var(--blue);background:var(--blue-l)}
+.pause-btn{display:none;font-size:12px;font-weight:500;padding:4px 12px;border-radius:20px;border:1.5px solid var(--border2);background:var(--bg-card);color:var(--text2);cursor:pointer;white-space:nowrap}
+.pause-btn.vis{display:inline-flex;align-items:center;gap:4px}
+.pause-btn.paused{color:var(--green-d);border-color:var(--green);background:var(--green-l)}
+.pbar-wrap{height:3px;background:var(--border)}
+.pbar{height:3px;width:0%;transition:width .3s linear}
+.pbar-he{background:var(--blue)}
+.pbar-fr{background:var(--purple)}
+.m1-grid{display:grid;grid-template-columns:1fr 1fr}
+.col-he{padding:1.1rem 1.25rem;background:#2C6E9E06;border-right:1px solid var(--border)}
+.col-fr{padding:1.1rem 1.25rem;background:#5B4FA006}
+.col-lbl{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.6rem}
+.col-he .col-lbl{color:var(--blue)}
+.col-fr .col-lbl{color:var(--purple)}
+.txt-he{font-size:14.5px;line-height:2;direction:rtl;text-align:right;color:var(--text)}
+.txt-fr{font-size:14.5px;line-height:2;color:var(--text)}
+.wrd{cursor:pointer;border-radius:3px;padding:0 2px;transition:background .1s}
+.wrd:hover{background:#2C6E9E22}
+.m1-tip{position:fixed;background:var(--bg-card);border:1.5px solid var(--border2);border-radius:var(--r);padding:5px 12px;font-size:12px;font-weight:500;color:var(--text);pointer-events:none;z-index:9999;display:none;box-shadow:var(--shadow-md)}
+@media(max-width:600px){.m1-grid{grid-template-columns:1fr}.col-he{border-right:none;border-bottom:1px solid var(--border)}}
+
+/* ── MODULE 2 ── */
+.m2-stats{display:flex;gap:12px;justify-content:center;margin-bottom:1.25rem;flex-wrap:wrap}
+.m2-stat{text-align:center;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-md);padding:.6rem 1.2rem;box-shadow:var(--shadow)}
+.m2-stat-num{font-size:22px;font-weight:700;color:var(--blue)}
+.m2-stat-lbl{font-size:11px;color:var(--text2)}
+.m2-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:12px}
+.m2-card{background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:1rem;cursor:pointer;transition:all .18s;min-height:148px;display:flex;flex-direction:column;gap:5px;box-shadow:var(--shadow)}
+.m2-card:hover{border-color:var(--blue);box-shadow:var(--shadow-md);transform:translateY(-1px)}
+.m2-card.seen{border-color:var(--green)}
+.m2-card.flipped{background:var(--bg2);border-color:var(--blue)}
+.wrd-main{font-size:23px;font-weight:700;color:var(--text);direction:rtl;line-height:1.3;text-align:right}
+.wrd-nikoud{font-size:20px;color:var(--blue);direction:rtl;line-height:1.3;text-align:right;display:none}
+.translit{font-size:12px;color:var(--text2);font-style:italic;margin-top:1px}
+.gram-pill{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap}
+.gp-n{background:var(--green-l);color:var(--green-d)}
+.gp-v{background:var(--purple-l);color:var(--purple-d)}
+.gp-adj{background:var(--amber-l);color:var(--amber-d)}
+.gp-exp{background:var(--coral-l);color:var(--coral-d)}
+.m2-div{height:1px;background:var(--border);margin:4px 0}
+.m2-tr{font-size:13px;font-weight:600;color:var(--text);display:none}
+.m2-ex{font-size:12px;color:var(--text2);line-height:1.5;display:none;direction:rtl;text-align:right}
+.m2-exfr{font-size:11px;color:var(--text3);line-height:1.4;display:none;font-style:italic}
+.m2-card.flipped .m2-tr,.m2-card.flipped .m2-ex,.m2-card.flipped .m2-exfr,.m2-card.flipped .m2-div{display:block}
+.aud-row{display:flex;justify-content:flex-end;margin-top:auto;padding-top:4px}
+.snd-btn{font-size:11px;font-weight:500;padding:3px 10px;border-radius:20px;border:1.5px solid var(--border2);background:transparent;color:var(--text2);cursor:pointer;transition:all .12s}
+.snd-btn:hover{background:var(--bg2)}
+.snd-btn.playing{color:var(--blue-d);border-color:var(--blue);background:var(--blue-l)}
+
+/* ── MODULE 3 ── */
+.m3-top-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:1.25rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:.9rem 1.2rem;box-shadow:var(--shadow)}
+.score-box{display:flex;align-items:center;gap:10px}
+.score-num{font-size:28px;font-weight:800;color:var(--blue);line-height:1}
+.score-info{font-size:12px;color:var(--text2)}
+.lang-toggle{display:flex;border:1.5px solid var(--border2);border-radius:var(--r);overflow:hidden}
+.lt-btn{padding:6px 16px;font-size:13px;font-weight:600;cursor:pointer;background:var(--bg2);color:var(--text2);border:none;transition:all .15s}
+.lt-btn.active{background:var(--blue);color:#fff}
+.m3-nav-bar{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;flex-wrap:wrap}
+.m3-nav-info{font-size:13px;font-weight:600;color:var(--text2);padding:6px 14px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow)}
+.ex-card{background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:1.5rem;box-shadow:var(--shadow-md)}
+.ex-para-tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:.9rem}
+.ex-sentence{font-size:18px;line-height:2.4;color:var(--text);margin-bottom:1.25rem;direction:rtl;text-align:right}
+.ex-sentence.fr{direction:ltr;text-align:left}
+.blank{display:inline-block;min-width:100px;height:34px;border-bottom:2.5px solid var(--blue);vertical-align:middle;margin:0 5px;text-align:center;font-size:15px;font-weight:700;color:var(--blue);line-height:34px;border-radius:4px 4px 0 0;transition:all .15s;cursor:pointer}
+.blank:hover{background:var(--blue-l)}
+.blank.filled{background:var(--blue-l)}
+.blank.correct{background:var(--green-l);border-color:var(--green);color:var(--green-d)}
+.blank.wrong{background:var(--coral-l);border-color:var(--coral);color:var(--coral-d)}
+.tiles-wrap{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.25rem}
+.tile{padding:8px 16px;border-radius:var(--r);border:1.5px solid var(--border2);background:var(--bg-card);font-size:14px;font-weight:500;cursor:pointer;transition:all .15s;direction:rtl;position:relative;box-shadow:var(--shadow)}
+.tile:hover{background:var(--blue-l);border-color:var(--blue);transform:translateY(-1px)}
+.tile.used{opacity:.3;pointer-events:none}
+.tile-tip{position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:var(--text);color:#fff;border-radius:var(--r);padding:4px 10px;font-size:11px;white-space:nowrap;pointer-events:none;z-index:50;display:none}
+.tile:hover .tile-tip{display:block}
+.ex-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.ex-fb{font-size:13px;font-weight:600;padding:6px 14px;border-radius:var(--r);display:none}
+.ex-fb.ok{background:var(--green-l);color:var(--green-d);display:inline-block}
+.ex-fb.ko{background:var(--coral-l);color:var(--coral-d);display:inline-block}
+.ans-reveal{font-size:13px;color:var(--text2);margin-top:8px;padding:8px 12px;background:var(--bg2);border-radius:var(--r);display:none}
+
+/* ── MODULE 4 ── */
+.m4-reconstruct{background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:1.5rem;box-shadow:var(--shadow-md)}
+.m4-zone{min-height:52px;border:2px dashed var(--border2);border-radius:var(--r-md);padding:.6rem 1rem;margin-bottom:1.25rem;display:flex;flex-wrap:wrap;gap:8px;align-items:center;direction:rtl;background:var(--bg2);transition:border-color .15s}
+.m4-zone.fr{direction:ltr}
+.m4-zone.has-words{border-color:var(--blue);background:var(--blue-l)}
+.m4-zone-hint{font-size:13px;color:var(--text3);font-style:italic;padding:6px 0;width:100%;text-align:center}
+.m4-word{padding:7px 14px;border-radius:var(--r);border:1.5px solid var(--border2);background:var(--bg-card);font-size:14px;font-weight:500;cursor:pointer;transition:all .15s;box-shadow:var(--shadow);position:relative}
+.m4-word:hover{transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.m4-word.placed{background:var(--blue-l);border-color:var(--blue);color:var(--blue-d)}
+.m4-word.placed:hover{background:var(--coral-l);border-color:var(--coral)}
+.m4-word.correct-w{background:var(--green-l);border-color:var(--green);color:var(--green-d);pointer-events:none}
+.m4-word.wrong-w{background:var(--coral-l);border-color:var(--coral);color:var(--coral-d);pointer-events:none}
+.m4-source{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.25rem;direction:rtl;min-height:44px}
+.m4-source.fr{direction:ltr}
+.m4-word.used-src{opacity:.25;pointer-events:none}
+.m4-word-tip{position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:var(--text);color:#fff;border-radius:var(--r);padding:4px 10px;font-size:11px;white-space:nowrap;pointer-events:none;z-index:50;display:none}
+.m4-word:hover .m4-word-tip{display:block}
+
+/* ── MODULE 5 ── */
+.m5-levels{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:1.5rem}
+.m5-level-card{border-radius:var(--r-lg);padding:1rem;text-align:center;cursor:pointer;border:2px solid transparent;transition:all .18s;box-shadow:var(--shadow)}
+.m5-level-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.m5-level-card.active{border-width:2px}
+.m5-lv1{background:var(--green-l);border-color:var(--green)}
+.m5-lv2{background:var(--amber-l);border-color:var(--amber)}
+.m5-lv3{background:var(--purple-l);border-color:var(--purple)}
+.m5-lv-icon{font-size:22px;margin-bottom:.4rem}
+.m5-lv-title{font-size:13px;font-weight:700}
+.m5-lv-sub{font-size:11px;margin-top:2px}
+.m5-lv1 .m5-lv-title{color:var(--green-d)}
+.m5-lv2 .m5-lv-title{color:var(--amber-d)}
+.m5-lv3 .m5-lv-title{color:var(--purple-d)}
+.m5-lv1 .m5-lv-sub{color:var(--green-d)}
+.m5-lv2 .m5-lv-sub{color:var(--amber-d)}
+.m5-lv3 .m5-lv-sub{color:var(--purple-d)}
+.m5-q-card{background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:1.5rem;box-shadow:var(--shadow-md);margin-bottom:1rem}
+.m5-q-text{font-size:16px;font-weight:600;color:var(--text);margin-bottom:1.1rem;line-height:1.5}
+.m5-choices{display:flex;flex-direction:column;gap:8px;margin-bottom:1.1rem}
+.m5-choice{padding:.75rem 1rem;border-radius:var(--r-md);border:1.5px solid var(--border2);background:var(--bg2);font-size:14px;cursor:pointer;transition:all .15s;text-align:left}
+.m5-choice:hover{border-color:var(--blue);background:var(--blue-l)}
+.m5-choice.selected{border-color:var(--blue);background:var(--blue-l);font-weight:600}
+.m5-choice.correct{border-color:var(--green);background:var(--green-l);color:var(--green-d);font-weight:600}
+.m5-choice.wrong{border-color:var(--coral);background:var(--coral-l);color:var(--coral-d)}
+.m5-free-input{width:100%;padding:.75rem 1rem;border-radius:var(--r-md);border:1.5px solid var(--border2);background:var(--bg2);font-size:14px;font-family:inherit;resize:vertical;min-height:90px;color:var(--text);transition:border-color .15s}
+.m5-free-input:focus{outline:none;border-color:var(--blue)}
+.m5-suggestion{margin-top:.8rem;padding:.8rem 1rem;background:var(--purple-l);border-radius:var(--r-md);font-size:13px;color:var(--purple-d);display:none;border-left:3px solid var(--purple)}
+.m5-expl{margin-top:.75rem;padding:.75rem 1rem;background:var(--bg2);border-radius:var(--r-md);font-size:13px;color:var(--text2);display:none}
+
+/* ── FINAL SCREEN ── */
+.final-screen{text-align:center;padding:2.5rem 1.5rem;background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--r-xl);box-shadow:var(--shadow-md);display:none}
+.final-big{font-size:56px;font-weight:800;line-height:1;margin-bottom:.5rem}
+.final-label{font-size:16px;color:var(--text2);margin-bottom:1.5rem}
+.final-badge{display:inline-block;font-size:16px;font-weight:700;padding:10px 28px;border-radius:var(--r-lg);margin-bottom:1.5rem}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>האותיות הסופיות בעברית <span>· Les lettres finales en hébreu</span></h1>
+    <p>Cours bilingue interactif · קורס דו-לשוני אינטראקטיבי</p>
+    <div class="nav-tabs-wrap">
+      <button class="nav-tab active" onclick="showPage('m1',this)"><span class="tab-icon">📖</span> Texte <span class="tab-num">M1</span></button>
+      <button class="nav-tab" onclick="showPage('m2',this)"><span class="tab-icon">🗂</span> Vocabulaire <span class="tab-num">M2</span></button>
+      <button class="nav-tab" onclick="showPage('m3',this)"><span class="tab-icon">✏️</span> Compléter <span class="tab-num">M3</span></button>
+      <button class="nav-tab" onclick="showPage('m4',this)"><span class="tab-icon">🔀</span> Reconstruire <span class="tab-num">M4</span></button>
+      <button class="nav-tab" onclick="showPage('m5',this)"><span class="tab-icon">🧠</span> Comprendre <span class="tab-num">M5</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ MODULE 1 ═══════════ -->
+<div class="page active" id="page-m1">
+  <div class="sec-head">
+    <div class="sec-badge sec-badge-blue">📖 Module 1 — Texte bilingue</div>
+    <div class="sec-title">Le texte complet en hébreu et français</div>
+    <div class="sec-sub">Survolez un mot hébreu pour voir sa traduction · ▶ pour écouter · ⏸ pour pausez</div>
+  </div>
+  <div id="m1-paras"></div>
+  <div class="m1-tip" id="m1-tip"></div>
+</div>
+
+<!-- ═══════════ MODULE 2 ═══════════ -->
+<div class="page" id="page-m2">
+  <div class="sec-head">
+    <div class="sec-badge sec-badge-green">🗂 Module 2 — Vocabulaire clé</div>
+    <div class="sec-title">40 mots essentiels · מילים מפתח</div>
+    <div class="sec-sub">Cliquez pour révéler · ▶ écouter active le nikoud · filtrez par thème ou catégorie</div>
+    <div class="m2-stats" id="m2-stats"></div>
+    <div style="max-width:320px;margin:.5rem auto 0">
+      <div class="progress-track"><div class="progress-fill pf-green" id="m2-pfill" style="width:0%"></div></div>
+      <div style="font-size:12px;color:var(--text2);text-align:center;margin-top:5px" id="m2-plbl">0 / 40 mots vus</div>
+    </div>
+  </div>
+  <div class="filters-row"><span class="filter-label">Thème :</span>
+    <button class="pill active" data-f="para" data-v="all">Tous</button>
+    <button class="pill" data-f="para" data-v="P1">P1</button><button class="pill" data-f="para" data-v="P2">P2</button>
+    <button class="pill" data-f="para" data-v="P3">P3</button><button class="pill" data-f="para" data-v="P4">P4</button>
+    <button class="pill" data-f="para" data-v="P5">P5</button><button class="pill" data-f="para" data-v="P6">P6</button>
+    <button class="pill" data-f="para" data-v="P7">P7</button><button class="pill" data-f="para" data-v="P8">P8</button>
+  </div>
+  <div class="filters-row"><span class="filter-label">Catégorie :</span>
+    <button class="pill active" data-f="gram" data-v="all">Tous</button>
+    <button class="pill" data-f="gram" data-v="n">Nom</button><button class="pill" data-f="gram" data-v="v">Verbe</button>
+    <button class="pill" data-f="gram" data-v="adj">Adjectif</button><button class="pill" data-f="gram" data-v="exp">Expression</button>
+  </div>
+  <div class="m2-grid" id="m2-grid"></div>
+</div>
+
+<!-- ═══════════ MODULE 3 ═══════════ -->
+<div class="page" id="page-m3">
+  <div class="sec-head">
+    <div class="sec-badge sec-badge-purple">✏️ Module 3 — Phrases à compléter</div>
+    <div class="sec-title">56 exercices avec tuiles</div>
+    <div class="sec-sub">Choisissez une tuile · survolez pour traduction · validez votre réponse</div>
+  </div>
+  <div class="m3-top-bar">
+    <div class="score-box">
+      <div class="score-num" id="m3-sval">0</div>
+      <div class="score-info"><div id="m3-stot">/ 56</div><div>points</div></div>
+    </div>
+    <div class="lang-toggle">
+      <button class="lt-btn active" id="m3-lt-he" onclick="m3SetLang('he')">עברית</button>
+      <button class="lt-btn" id="m3-lt-fr" onclick="m3SetLang('fr')">Français</button>
+    </div>
+    <button class="btn" onclick="m3Reset()">↺ Recommencer</button>
+  </div>
+  <div class="filters-row" id="m3-filters"></div>
+  <div style="margin-bottom:1rem"><div class="progress-track"><div class="progress-fill pf-purple" id="m3-pfill" style="width:0%"></div></div></div>
+  <div class="m3-nav-bar">
+    <button class="btn" onclick="m3Prev()">← Précédent</button>
+    <span class="m3-nav-info" id="m3-nav">1 / 56</span>
+    <button class="btn" onclick="m3Next()">Suivant →</button>
+  </div>
+  <div id="m3-wrap"></div>
+  <div class="final-screen" id="m3-final">
+    <div class="final-big" id="m3-fscore" style="color:var(--blue)"></div>
+    <div class="final-label">Score final — Module 3</div>
+    <div class="final-badge" id="m3-fbadge"></div><br>
+    <button class="btn btn-primary" onclick="m3Reset()">↺ Recommencer</button>
+  </div>
+</div>
+
+<!-- ═══════════ MODULE 4 ═══════════ -->
+<div class="page" id="page-m4">
+  <div class="sec-head">
+    <div class="sec-badge sec-badge-amber">🔀 Module 4 — Phrases à reconstruire</div>
+    <div class="sec-title">40 phrases dans le désordre</div>
+    <div class="sec-sub">Cliquez les mots dans le bon ordre · survolez pour traduction · cliquez un mot placé pour le retirer</div>
+  </div>
+  <div class="m3-top-bar">
+    <div class="score-box">
+      <div class="score-num" id="m4-sval">0</div>
+      <div class="score-info"><div id="m4-stot">/ 40</div><div>points</div></div>
+    </div>
+    <div class="lang-toggle">
+      <button class="lt-btn active" id="m4-lt-he" onclick="m4SetLang('he')">עברית</button>
+      <button class="lt-btn" id="m4-lt-fr" onclick="m4SetLang('fr')">Français</button>
+    </div>
+    <button class="btn" onclick="m4Reset()">↺ Recommencer</button>
+  </div>
+  <div class="filters-row" id="m4-filters"></div>
+  <div style="margin-bottom:1rem"><div class="progress-track"><div class="progress-fill pf-amber" id="m4-pfill" style="width:0%"></div></div></div>
+  <div class="m3-nav-bar">
+    <button class="btn" onclick="m4Prev()">← Précédent</button>
+    <span class="m3-nav-info" id="m4-nav">1 / 40</span>
+    <button class="btn" onclick="m4Next()">Suivant →</button>
+  </div>
+  <div id="m4-wrap"></div>
+  <div class="final-screen" id="m4-final">
+    <div class="final-big" id="m4-fscore" style="color:var(--amber)"></div>
+    <div class="final-label">Score final — Module 4</div>
+    <div class="final-badge" id="m4-fbadge"></div><br>
+    <button class="btn btn-primary" onclick="m4Reset()">↺ Recommencer</button>
+  </div>
+</div>
+
+<!-- ═══════════ MODULE 5 ═══════════ -->
+<div class="page" id="page-m5">
+  <div class="sec-head">
+    <div class="sec-badge sec-badge-coral">🧠 Module 5 — Questions de compréhension</div>
+    <div class="sec-title">24 questions · 3 niveaux</div>
+    <div class="sec-sub">Littéral · Inférentiel · Réflexif — testez votre compréhension du texte</div>
+  </div>
+  <div class="m5-levels">
+    <div class="m5-level-card m5-lv1 active" onclick="m5SetLevel(1,this)">
+      <div class="m5-lv-icon">🟢</div>
+      <div class="m5-lv-title">Niveau 1</div>
+      <div class="m5-lv-sub">Littéral · 8 questions</div>
+      <div style="font-size:11px;margin-top:4px;color:var(--green-d)" id="m5-sc1">0 / 8</div>
+    </div>
+    <div class="m5-level-card m5-lv2" onclick="m5SetLevel(2,this)">
+      <div class="m5-lv-icon">🟡</div>
+      <div class="m5-lv-title">Niveau 2</div>
+      <div class="m5-lv-sub">Inférentiel · 8 questions</div>
+      <div style="font-size:11px;margin-top:4px;color:var(--amber-d)" id="m5-sc2">0 / 8</div>
+    </div>
+    <div class="m5-level-card m5-lv3" onclick="m5SetLevel(3,this)">
+      <div class="m5-lv-icon">🔴</div>
+      <div class="m5-lv-title">Niveau 3</div>
+      <div class="m5-lv-sub">Réflexif · 8 questions</div>
+      <div style="font-size:11px;margin-top:4px;color:var(--purple-d)" id="m5-sc3">0 / 8</div>
+    </div>
+  </div>
+  <div style="margin-bottom:1rem"><div class="progress-track"><div class="progress-fill pf-green" id="m5-pfill" style="width:0%"></div></div></div>
+  <div class="m3-nav-bar">
+    <button class="btn" onclick="m5Prev()">← Précédent</button>
+    <span class="m3-nav-info" id="m5-nav">1 / 8</span>
+    <button class="btn" onclick="m5Next()">Suivant →</button>
+  </div>
+  <div id="m5-wrap"></div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════
+const PARA_COLORS=['pc-P1','pc-P2','pc-P3','pc-P4','pc-P5','pc-P6','pc-P7','pc-P8'];
+const PARA_TITLES={P1:'Introduction',P2:'Alphabet proto-cananéen',P3:'Phénicien → Hébraïque',P4:'Pierre → Parchemin',P5:'Lettres à queue',P6:'Mem final',P7:'Tradition talmudique',P8:'Autres langues'};
+
+const M1=[
+  {id:'P1',he:'האותיות הסופיות בעברית, כמו שאנחנו מכירים אותן היום, נכתבו בעבר בכלל באמצע המילה. פשוט כי הן היו האותיות הרגילות. הגרסה הרגילה של אותיות מנצפ"כ הגיעה רק אחר כך.',
+   fr:"Les lettres finales en hébreu, telles que nous les connaissons aujourd'hui, étaient autrefois écrites au milieu des mots — tout simplement parce qu'elles étaient les lettres standard. La forme normale des lettres Manzapakh n'est apparue que plus tard.",
+   w:{'האותיות':'les lettres','הסופיות':'finales','בעברית':'en hébreu','היום':"aujourd'hui",'נכתבו':'étaient écrites','בעבר':'autrefois','באמצע':'au milieu','המילה':'du mot','הרגילות':'standard','מנצפ"כ':'Manzapakh','הגיעה':"est arrivée",'אחר כך':'plus tard'}},
+  {id:'P2',he:'האבולוציה של האותיות העבריות של היום מתחילה באלפבית הפרוטו-כנעני. הכתב הזה התפתח כנראה בסביבות המאה ה-19 לפני הספירה, על בסיס ההירוגליפים המצריים. כל עיצור מיוצג בו על ידי ציור של דבר שמילתו מתחילה באותו עיצור — זהו העיקרון האקרופוני.',
+   fr:"L'évolution des lettres hébraïques commence avec l'alphabet proto-cananéen. Cette écriture s'est développée vers le XIXe siècle avant notre ère, à partir des hiéroglyphes égyptiens. Chaque consonne est représentée par le dessin d'un objet dont le nom commence par cette consonne — c'est le principe acrophonique.",
+   w:{'האבולוציה':"l'évolution",'האותיות':'les lettres','העבריות':'hébraïques','מתחילה':'commence','באלפבית':"dans l'alphabet",'הפרוטו-כנעני':'proto-cananéen','הכתב':"l'écriture",'התפתח':"s'est développé",'המאה':'le siècle','לפני הספירה':'avant notre ère','ההירוגליפים':'les hiéroglyphes','המצריים':'égyptiens','עיצור':'consonne','ציור':'dessin','העיקרון':'le principe','האקרופוני':'acrophonique'}},
+  {id:'P3',he:'מהכתב הפרוטו-כנעני התפתח הכתב הפיניקי, שממנו התפתח הכתב הארמי, ומהכתב הארמי התפתח באשור הכתב העברי, הנקרא גם אשורי. וכך הראש, שציין את הצליל ר\' בכתב הפרוטו-כנעני, הפך לאות ריש שאנחנו מכירים.',
+   fr:"À partir de l'écriture proto-cananéenne s'est développée l'écriture phénicienne, dont est issue l'écriture araméenne, et de celle-ci est née l'écriture hébraïque en Assyrie — appelée aussi assyrienne. Ainsi, la tête (Rosh), qui représentait le son R, est devenue la lettre Reish.",
+   w:{'הפיניקי':'phénicien','הארמי':'araméen','באשור':'en Assyrie','העברי':'hébraïque','אשורי':'assyrien','הראש':'la tête (Rosh)','ציין':'représentait','הצליל':'le son','הפך':"est devenu",'ריש':'Reish (lettre R)'}},
+  {id:'P4',he:'המעבר מכתב קשה, המוטבע על אבן, לכתב רך, הנכתב על קלף או פפירוס באמצעות קולמוס, היה מהפכני. הוא זירז את מהירות הכתיבה, שהפכה למחוברת יותר. כשרוצים לכתוב ברצף ובשטף, היד נמשכת באופן טבעי לעבר האות הבאה.',
+   fr:"Le passage d'une écriture gravée dans la pierre à une écriture souple sur parchemin ou papyrus, tracée à l'aide d'un calame, fut révolutionnaire. Il accéléra la vitesse d'écriture, qui devint plus cursive. Lorsqu'on écrit en continu et avec fluidité, la main est naturellement attirée vers la lettre suivante.",
+   w:{'המעבר':'le passage','קשה':'dur','אבן':'pierre','רך':'souple','קלף':'parchemin','פפירוס':'papyrus','קולמוס':'calame/plume','מהפכני':'révolutionnaire','זירז':"a accéléré",'מהירות':'vitesse','הכתיבה':"l'écriture",'מחוברת':'cursive','ברצף':'en continu','בשטף':'avec fluidité'}},
+  {id:'P5',he:"האותיות ן', ץ', ף', וכ' התקשו להשתלב בכתב החדש משום שהיו להן זנבות — חלק שיורד מתחת לשורה. התוצאה הייתה שכל אחת מהן הצמיחה קו בסיס צמוד לשורה במקום הזנב. כשהן הגיעו בסוף מילה, לא נדרשה המתיחה שמאלה, ולכן שמרו על צורתן המקורית.",
+   fr:"Les lettres ן ץ ף ך s'intégraient mal à la nouvelle écriture car elles possédaient des queues — une partie descendant sous la ligne. Chacune développa une ligne de base longeant la ligne d'écriture. En fin de mot, aucune extension vers la gauche n'était nécessaire, et elles conservèrent leur forme originelle.",
+   w:{'זנבות':'queues des lettres','שיורד':'qui descend','מתחת':'en dessous','לשורה':'à la ligne','קו בסיס':'ligne de base','הצמיחה':"a développé",'המתיחה':"l'étirement",'שמאלה':'vers la gauche','צורתן':'leur forme','המקורית':'originelle'}},
+  {id:'P6',he:"הסיפור של מ' סופית קצת שונה. הקושי לחבר אותה למילה הבאה לא נבע מזנב, אלא מכיוון שהייתה צורה סגורה. לכן הגרסה האבולוציונית הראשונה שלה נראתה אחרת, ובהמשך היא הפכה למ' שאנחנו מכירים ואוהבים.",
+   fr:"L'histoire du Mem final est un peu différente. La difficulté à le relier au mot suivant ne venait pas d'une queue, mais de sa forme fermée. C'est pourquoi sa première version évolutive présentait un aspect différent, avant de devenir le Mem que nous connaissons.",
+   w:{'הסיפור':"l'histoire",'שונה':'différent','הקושי':'la difficulté','לחבר':'relier','נבע':'provenait','צורה':'forme','סגורה':'fermée','האבולוציונית':'évolutionnaire','הראשונה':'première','ובהמשך':'puis/ensuite'}},
+  {id:'P7',he:'בתלמוד הבבלי נכתב שנביאי ישראל הם שינו את צורת האותיות. הנביאים נקראו גם צופים, וכך האותיות הללו זכו לכינוי מנצפ"כ — שמשמעותו מן צופים. הגאון מווילנה הסביר שהן מסמלות את חמש ההלכות שנשתכחו ממשה רבנו.',
+   fr:"Le Talmud de Babylone affirme que les prophètes d'Israël ont modifié la forme de ces lettres. Les prophètes étaient aussi appelés Tsofim (guetteurs), et c'est ainsi que ces lettres reçurent le nom de Manzapakh. Le Gaon de Vilna expliqua qu'elles symbolisent les cinq lois oubliées par Moïse.",
+   w:{'התלמוד':'le Talmud','הבבלי':'babylonien','נביאי':'prophètes de','ישראל':'Israël','שינו':'ont modifié','צופים':'guetteurs','כינוי':'appellation','מסמלות':'symbolisent','הלכות':'lois halakhiques','שנשתכחו':'oubliées','משה רבנו':'Moïse notre maître'}},
+  {id:'P8',he:"האותיות הסופיות הן סיפור מיוחד לעברית. היא אחת מבין כמה שפות בודדות בלבד שעושות שימוש במשהו כזה. חוץ מעברית, יש אותיות סופיות בערבית, במנצ'ורית, וביוונית — שם כותבים את האות הסופית של סיגמה בצורה שונה.",
+   fr:"Les lettres finales constituent une particularité de l'hébreu. C'est l'une des rares langues au monde à utiliser un tel système. Outre l'hébreu, on trouve des lettres finales en arabe, en mandchou, et en grec — où le sigma final s'écrit différemment.",
+   w:{'מיוחד':'particulier','שפות':'langues','בודדות':'rares','שימוש':'utilisation','ערבית':'arabe','מנצ\'ורית':'mandchou','יוונית':'grec','סיגמה':'sigma','שונה':'différemment'}}
+];
+
+const M2=[
+  {id:1,p:'P1',he:'אוֹתִיּוֹת',pl:'אותיות',tr:'otiyot',g:'n',fr:'lettres',ex:'האותיות הסופיות נכתבו בעבר באמצע המילה',exfr:"Les lettres finales s'écrivaient autrefois au milieu du mot"},
+  {id:2,p:'P1',he:'סוֹפִיּוֹת',pl:'סופיות',tr:'sofiyot',g:'adj',fr:'finales',ex:'הגרסה הרגילה של אותיות מנצפ"כ הגיעה אחר כך',exfr:"La forme normale de Manzapakh est apparue plus tard"},
+  {id:3,p:'P1',he:'מִנְצַפַּ"כ',pl:'מנצפ"כ',tr:'manzapakh',g:'exp',fr:'acronyme des lettres finales',ex:'הגרסה הרגילה של אותיות מנצפ"כ הגיעה רק אחר כך',exfr:"La forme normale des lettres Manzapakh n'est apparue que plus tard"},
+  {id:4,p:'P1',he:'רְגִילוֹת',pl:'רגילות',tr:'regilot',g:'adj',fr:'standard / normales',ex:'הן היו האותיות הרגילות',exfr:'Elles étaient les lettres standard'},
+  {id:5,p:'P2',he:'אֶבוֹלוּצְיָה',pl:'אבולוציה',tr:'evoloutsya',g:'n',fr:'évolution',ex:'האבולוציה של האותיות העבריות מתחילה באלפבית הפרוטו-כנעני',exfr:"L'évolution des lettres hébraïques commence avec l'alphabet proto-cananéen"},
+  {id:6,p:'P2',he:'אַלְפָּבֵית',pl:'אלפבית',tr:'alefbet',g:'n',fr:'alphabet',ex:'האבולוציה מתחילה באלפבית הפרוטו-כנעני',exfr:"L'évolution commence avec l'alphabet proto-cananéen"},
+  {id:7,p:'P2',he:'הִירוֹגְלִיפִים',pl:'הירוגליפים',tr:'hieroglifim',g:'n',fr:'hiéroglyphes',ex:'הכתב התפתח על בסיס ההירוגליפים המצריים',exfr:"L'écriture s'est développée à partir des hiéroglyphes égyptiens"},
+  {id:8,p:'P2',he:'עִיצּוּר',pl:'עיצור',tr:'itsur',g:'n',fr:'consonne',ex:'כל עיצור מיוצג על ידי ציור',exfr:'Chaque consonne est représentée par un dessin'},
+  {id:9,p:'P2',he:'צִיּוּר',pl:'ציור',tr:'tsiyur',g:'n',fr:'dessin',ex:'כל עיצור מיוצג על ידי ציור של דבר',exfr:"Chaque consonne est représentée par le dessin d'un objet"},
+  {id:10,p:'P2',he:'עִקָּרוֹן',pl:'עיקרון',tr:'ikaron',g:'n',fr:'principe',ex:'זהו העיקרון האקרופוני',exfr:"C'est le principe acrophonique"},
+  {id:11,p:'P3',he:'כְּתָב',pl:'כתב',tr:'ktav',g:'n',fr:'écriture / script',ex:'מהכתב הפרוטו-כנעני התפתח הכתב הפיניקי',exfr:"À partir de l'écriture proto-cananéenne s'est développée l'écriture phénicienne"},
+  {id:12,p:'P3',he:'הִתְפַּתֵּחַ',pl:'התפתח',tr:"hitpate'akh",g:'v',fr:"s'est développé",ex:'מהכתב הארמי התפתח הכתב העברי',exfr:"De l'écriture araméenne s'est développée l'écriture hébraïque"},
+  {id:13,p:'P3',he:'צְלִיל',pl:'צליל',tr:'tslil',g:'n',fr:'son',ex:"הראש ציין את הצליל ר'",exfr:'La tête représentait le son R'},
+  {id:14,p:'P3',he:'הָפַךְ',pl:'הפך',tr:'hafakh',g:'v',fr:'est devenu / a changé',ex:'הראש הפך לאות ריש',exfr:'La tête est devenue la lettre Reish'},
+  {id:15,p:'P4',he:'מַעֲבָר',pl:'מעבר',tr:"ma'avar",g:'n',fr:'passage / transition',ex:'המעבר מכתב קשה לכתב רך היה מהפכני',exfr:"Le passage d'une écriture dure à une écriture souple fut révolutionnaire"},
+  {id:16,p:'P4',he:'קָלָף',pl:'קלף',tr:'klaf',g:'n',fr:'parchemin',ex:'הכתב הרך נכתב על קלף או פפירוס',exfr:"L'écriture souple était écrite sur parchemin ou papyrus"},
+  {id:17,p:'P4',he:'קּוּלְמוּס',pl:'קולמוס',tr:'kulmus',g:'n',fr:'calame / plume',ex:'הכתב נכתב על קלף באמצעות קולמוס',exfr:"L'écriture était tracée à l'aide d'un calame"},
+  {id:18,p:'P4',he:'מַהְפְּכָנִי',pl:'מהפכני',tr:'mahapkhani',g:'adj',fr:'révolutionnaire',ex:'המעבר היה מהפכני',exfr:'La transition fut révolutionnaire'},
+  {id:19,p:'P4',he:'מְחוּבֶּרֶת',pl:'מחוברת',tr:'mekhuberet',g:'adj',fr:'cursive / liée',ex:'הכתיבה הפכה למחוברת יותר',exfr:"L'écriture devint plus cursive"},
+  {id:20,p:'P4',he:'מְהִירוּת',pl:'מהירות',tr:'mehirut',g:'n',fr:'vitesse',ex:'הוא זירז את מהירות הכתיבה',exfr:"Il accéléra la vitesse d'écriture"},
+  {id:21,p:'P4',he:'שְׁטֶף',pl:'שטף',tr:'shetef',g:'n',fr:'fluidité',ex:'כשרוצים לכתוב בשטף',exfr:"Lorsqu'on veut écrire avec fluidité"},
+  {id:22,p:'P5',he:'זָנָב',pl:'זנב',tr:'zanav',g:'n',fr:'queue (des lettres)',ex:"האותיות ן' ץ' ף' ך' היו להן זנבות",exfr:'Les lettres ן ץ ף ך avaient des queues'},
+  {id:23,p:'P5',he:'שּׁוּרָה',pl:'שורה',tr:'shura',g:'n',fr:'ligne',ex:'הזנב יורד מתחת לשורה',exfr:'La queue descend sous la ligne'},
+  {id:24,p:'P5',he:'קַו בָּסִיס',pl:'קו בסיס',tr:'kav basis',g:'n',fr:'ligne de base',ex:'כל אות הצמיחה קו בסיס צמוד לשורה',exfr:'Chaque lettre développa une ligne de base'},
+  {id:25,p:'P5',he:'מְתִיחָה',pl:'מתיחה',tr:'metikha',g:'n',fr:'étirement / extension',ex:'לא נדרשה המתיחה שמאלה',exfr:"L'extension vers la gauche n'était pas nécessaire"},
+  {id:26,p:'P5',he:'מְקוֹרִי',pl:'מקורי',tr:'mekori',g:'adj',fr:'originel / original',ex:'שמרו על צורתן המקורית',exfr:'Elles conservèrent leur forme originelle'},
+  {id:27,p:'P6',he:'סְגוּרָה',pl:'סגורה',tr:'sgura',g:'adj',fr:'fermée',ex:'הקושי נבע מכיוון שהייתה צורה סגורה',exfr:'La difficulté venait de sa forme fermée'},
+  {id:28,p:'P6',he:'קּוֹשִׁי',pl:'קושי',tr:'koshi',g:'n',fr:'difficulté',ex:'הקושי לחבר אותה לא נבע מזנב',exfr:"La difficulté à la relier ne venait pas d'une queue"},
+  {id:29,p:'P6',he:'גִּרְסָה',pl:'גרסה',tr:'girsah',g:'n',fr:'version',ex:'הגרסה האבולוציונית הראשונה נראתה אחרת',exfr:'Sa première version évolutive était différente'},
+  {id:30,p:'P7',he:'תַּלְמוּד',pl:'תלמוד',tr:'talmud',g:'n',fr:'Talmud',ex:'בתלמוד הבבלי נכתב שהנביאים שינו את צורת האותיות',exfr:'Le Talmud de Babylone affirme que les prophètes ont modifié la forme des lettres'},
+  {id:31,p:'P7',he:'נְבִיאִים',pl:'נביאים',tr:"nevi'im",g:'n',fr:'prophètes',ex:'נביאי ישראל הם שינו את צורת האותיות',exfr:"Les prophètes d'Israël ont modifié la forme des lettres"},
+  {id:32,p:'P7',he:'צוֹפִים',pl:'צופים',tr:'tsofim',g:'n',fr:'guetteurs / vigies',ex:'הנביאים נקראו גם צופים',exfr:'Les prophètes étaient aussi appelés Tsofim'},
+  {id:33,p:'P7',he:'כִּינּוּי',pl:'כינוי',tr:'kinuy',g:'n',fr:'surnom / appellation',ex:'האותיות זכו לכינוי מנצפ"כ',exfr:'Ces lettres reçurent le nom de Manzapakh'},
+  {id:34,p:'P7',he:'הֲלָכוֹת',pl:'הלכות',tr:'halakhot',g:'n',fr:'lois halakhiques',ex:'הן מסמלות את חמש ההלכות שנשתכחו ממשה רבנו',exfr:'Elles symbolisent les cinq lois oubliées par Moïse'},
+  {id:35,p:'P7',he:'מְסַמְּלוֹת',pl:'מסמלות',tr:'mesaymlelot',g:'v',fr:'symbolisent',ex:'הן מסמלות את חמש ההלכות',exfr:'Elles symbolisent les cinq lois'},
+  {id:36,p:'P8',he:'מְיוּחָד',pl:'מיוחד',tr:'meyukhad',g:'adj',fr:'particulier / spécial',ex:'האותיות הסופיות הן סיפור מיוחד לעברית',exfr:"Les lettres finales constituent une particularité de l'hébreu"},
+  {id:37,p:'P8',he:'שָׂפוֹת',pl:'שפות',tr:'safot',g:'n',fr:'langues',ex:'היא אחת מבין כמה שפות בודדות בלבד',exfr:"C'est l'une des rares langues seulement"},
+  {id:38,p:'P8',he:'עֲרָבִית',pl:'ערבית',tr:'aravit',g:'n',fr:'arabe (langue)',ex:'יש אותיות סופיות גם בערבית',exfr:'Il y a aussi des lettres finales en arabe'},
+  {id:39,p:'P8',he:'יְוָנִית',pl:'יוונית',tr:'yevanit',g:'n',fr:'grec (langue)',ex:'ביוונית כותבים את הסיגמה הסופית בצורה שונה',exfr:'En grec, le sigma final s\'écrit différemment'},
+  {id:40,p:'P8',he:'סִיגְמָה',pl:'סיגמה',tr:'sigma',g:'n',fr:'sigma (lettre grecque)',ex:'ביוונית כותבים את האות הסופית של סיגמה ככה',exfr:'En grec, la lettre finale sigma s\'écrit ainsi'}
+];
+
+const M3=[
+  {id:1,p:'P1',he:'האותיות הסופיות בעברית נכתבו בעבר באמצע ___.',fr:'Les lettres finales en hébreu s\'écrivaient autrefois au milieu du ___.',bl:[{ah:'המילה',af:'mot',th:['המילה','השורה','הדף','הכתב'],tf:['mot','texte','parchemin','alphabet']}]},
+  {id:2,p:'P1',he:'הן היו האותיות ___ של הכתב.',fr:'Elles étaient les lettres ___ de l\'écriture.',bl:[{ah:'הרגילות',af:'standard',th:['הרגילות','הסופיות','המיוחדות','החדשות'],tf:['standard','finales','spéciales','nouvelles']}]},
+  {id:3,p:'P1',he:'הגרסה הרגילה של מנצפ"כ הגיעה רק ___ כך.',fr:'La forme normale de Manzapakh n\'est apparue que ___ tard.',bl:[{ah:'אחר',af:'plus',th:['אחר','לפני','עם','בלי'],tf:['plus','avant','avec','sans']}]},
+  {id:4,p:'P1',he:'___ הסופיות נכתבו פעם בתוך המילה.',fr:'Les ___ finales étaient autrefois écrites à l\'intérieur du mot.',bl:[{ah:'האותיות',af:'lettres',th:['האותיות','המילים','הסימנים','הצלילים'],tf:['lettres','mots','signes','sons']}]},
+  {id:5,p:'P1',he:'הגרסה ___ של האותיות הגיעה רק אחר כך.',fr:'La version ___ des lettres n\'est apparue que plus tard.',bl:[{ah:'הרגילה',af:'normale',th:['הרגילה','הסופית','הישנה','החדשה'],tf:['normale','finale','ancienne','nouvelle']}]},
+  {id:6,p:'P1',he:'האותיות ___ נכתבו ___ באמצע המילה.',fr:'Les lettres ___ s\'écrivaient ___ au milieu du mot.',bl:[{ah:'הסופיות',af:'finales',th:['הסופיות','הרגילות','הראשונות','החדשות'],tf:['finales','normales','premières','nouvelles']},{ah:'בעבר',af:'autrefois',th:['בעבר','היום','עכשיו','מחר'],tf:['autrefois',"aujourd'hui",'maintenant','demain']}]},
+  {id:7,p:'P1',he:'מנצפ"כ הוא ___ שמבטא את המשמעות "מן צופים".',fr:'Manzapakh est un ___ qui exprime la signification "des guetteurs".',bl:[{ah:'כינוי',af:'surnom',th:['כינוי','שם','תואר','ביטוי'],tf:['surnom','nom','titre','expression']}]},
+  {id:8,p:'P2',he:'האבולוציה של האותיות העבריות מתחילה באלפבית ה___.',fr:'L\'évolution des lettres hébraïques commence avec l\'alphabet ___.',bl:[{ah:'פרוטו-כנעני',af:'proto-cananéen',th:['פרוטו-כנעני','פיניקי','ארמי','אשורי'],tf:['proto-cananéen','phénicien','araméen','assyrien']}]},
+  {id:9,p:'P2',he:'הכתב הפרוטו-כנעני התפתח על בסיס ה___ המצריים.',fr:'L\'écriture proto-cananéenne s\'est développée à partir des ___ égyptiens.',bl:[{ah:'הירוגליפים',af:'hiéroglyphes',th:['הירוגליפים','אלפבית','ציורים','סמלים'],tf:['hiéroglyphes','alphabet','dessins','symboles']}]},
+  {id:10,p:'P2',he:'כל ___ מיוצג על ידי ציור של דבר.',fr:'Chaque ___ est représentée par le dessin d\'un objet.',bl:[{ah:'עיצור',af:'consonne',th:['עיצור','תנועה','אות','מילה'],tf:['consonne','voyelle','lettre','mot']}]},
+  {id:11,p:'P2',he:'זהו העיקרון ה___.',fr:'C\'est le principe ___.',bl:[{ah:'אקרופוני',af:'acrophonique',th:['אקרופוני','פיניקי','ארמי','עברי'],tf:['acrophonique','phénicien','araméen','hébreu']}]},
+  {id:12,p:'P2',he:'הכתב הפרוטו-כנעני התפתח בסביבות המאה ה-19 ___ הספירה.',fr:'L\'écriture proto-cananéenne s\'est développée vers le XIXe siècle ___ notre ère.',bl:[{ah:'לפני',af:'avant',th:['לפני','אחרי','עם','בתוך'],tf:['avant','après','avec','dans']}]},
+  {id:13,p:'P2',he:'הכתב הזה התפתח על בסיס ה___ המצריים והוא מזכיר אותם.',fr:'Cette écriture s\'est développée à partir des ___ égyptiens et leur ressemble.',bl:[{ah:'הירוגליפים',af:'hiéroglyphes',th:['הירוגליפים','אלפביתים','כתבים','ציורים'],tf:['hiéroglyphes','alphabets','écritures','dessins']}]},
+  {id:14,p:'P2',he:'העיקרון האקרופוני: כל ___ מתחיל באות הראשונה של שמו.',fr:'Le principe acrophonique : chaque ___ commence par la première lettre de son nom.',bl:[{ah:'ציור',af:'dessin',th:['ציור','צליל','עיצור','סימן'],tf:['dessin','son','consonne','signe']}]},
+  {id:15,p:'P3',he:'מהכתב הפרוטו-כנעני התפתח הכתב ה___.',fr:'À partir de l\'écriture proto-cananéenne s\'est développée l\'écriture ___.',bl:[{ah:'פיניקי',af:'phénicienne',th:['פיניקי','ארמי','עברי','אשורי'],tf:['phénicienne','araméenne','hébraïque','assyrienne']}]},
+  {id:16,p:'P3',he:'מהכתב הפיניקי התפתח הכתב ה___.',fr:'De l\'écriture phénicienne s\'est développée l\'écriture ___.',bl:[{ah:'ארמי',af:'araméenne',th:['ארמי','עברי','אשורי','פרוטו-כנעני'],tf:['araméenne','hébraïque','assyrienne','proto-cananéenne']}]},
+  {id:17,p:'P3',he:'הכתב העברי נקרא גם כתב ___.',fr:'L\'écriture hébraïque est aussi appelée écriture ___.',bl:[{ah:'אשורי',af:'assyrienne',th:['אשורי','פיניקי','ארמי','כנעני'],tf:['assyrienne','phénicienne','araméenne','cananéenne']}]},
+  {id:18,p:'P3',he:'הראש ציין את ___ ר\' בכתב הפרוטו-כנעני.',fr:'La tête représentait le ___ R dans l\'écriture proto-cananéenne.',bl:[{ah:'הצליל',af:'son',th:['הצליל','הציור','האות','הסימן'],tf:['son','dessin','lettre','signe']}]},
+  {id:19,p:'P3',he:'הראש הפך לאות ה___ שאנחנו מכירים.',fr:'La tête est devenue la lettre ___ que nous connaissons.',bl:[{ah:'ריש',af:'Reish',th:['ריש','אלף','בית','גימל'],tf:['Reish','Alef','Bet','Gimel']}]},
+  {id:20,p:'P3',he:'הכתב הארמי התפתח ___ בסוריה של ימינו.',fr:'L\'écriture araméenne s\'est développée ___ dans la Syrie actuelle.',bl:[{ah:'באשור',af:'en Assyrie',th:['באשור','בכנען','במצרים','בפיניקיה'],tf:['en Assyrie','en Canaan','en Égypte','en Phénicie']}]},
+  {id:21,p:'P3',he:'הסימנים נעשו כל כך ___ עד שהתחילו לקצר אותם.',fr:'Les signes devinrent tellement ___ qu\'on commença à les abréger.',bl:[{ah:'מוכרים',af:'familiers',th:['מוכרים','נדירים','מורכבים','פשוטים'],tf:['familiers','rares','complexes','simples']}]},
+  {id:22,p:'P4',he:'המעבר לכתב רך היה ___.',fr:'Le passage à l\'écriture souple fut ___.',bl:[{ah:'מהפכני',af:'révolutionnaire',th:['מהפכני','רגיל','פשוט','איטי'],tf:['révolutionnaire','normal','simple','lent']}]},
+  {id:23,p:'P4',he:'הכתב הרך נכתב על ___ באמצעות קולמוס.',fr:'L\'écriture souple était écrite sur ___ à l\'aide d\'un calame.',bl:[{ah:'קלף',af:'parchemin',th:['קלף','אבן','עץ','מתכת'],tf:['parchemin','pierre','bois','métal']}]},
+  {id:24,p:'P4',he:'הכתב הרך נכתב באמצעות ___.',fr:'L\'écriture souple était tracée à l\'aide d\'un ___.',bl:[{ah:'קולמוס',af:'calame',th:['קולמוס','אבן','עט','מכחול'],tf:['calame','pierre','stylo','pinceau']}]},
+  {id:25,p:'P4',he:'המעבר זירז את ___ הכתיבה.',fr:'La transition accéléra la ___ d\'écriture.',bl:[{ah:'מהירות',af:'vitesse',th:['מהירות','איכות','דיוק','שיטת'],tf:['vitesse','qualité','précision','méthode']}]},
+  {id:26,p:'P4',he:'הכתיבה הפכה ל___ יותר.',fr:'L\'écriture devint plus ___.',bl:[{ah:'מחוברת',af:'cursive',th:['מחוברת','מהירה','ברורה','מסובכת'],tf:['cursive','rapide','claire','complexe']}]},
+  {id:27,p:'P4',he:'כשכותבים ב___, היד נמשכת לאות הבאה.',fr:'Lorsqu\'on écrit avec ___, la main est attirée vers la lettre suivante.',bl:[{ah:'שטף',af:'fluidité',th:['שטף','מהירות','דיוק','כוח'],tf:['fluidité','vitesse','précision','force']}]},
+  {id:28,p:'P4',he:'הכתב ___ היה מוטבע על אבן.',fr:'L\'écriture ___ était gravée dans la pierre.',bl:[{ah:'הקשה',af:'dure',th:['הקשה','הרכה','הרגילה','הסופית'],tf:['dure','souple','normale','finale']}]},
+  {id:29,p:'P5',he:"לאותיות ן' ץ' ף' ך' היו ___ שיורדים מתחת לשורה.",fr:'Les lettres ן ץ ף ך avaient des ___ qui descendaient sous la ligne.',bl:[{ah:'זנבות',af:'queues',th:['זנבות','קווים','צורות','ענפים'],tf:['queues','lignes','formes','branches']}]},
+  {id:30,p:'P5',he:'הזנבות יורדים מתחת ל___.',fr:'Les queues descendent sous la ___.',bl:[{ah:'שורה',af:'ligne',th:['שורה','מילה','אות','דף'],tf:['ligne','mot','lettre','page']}]},
+  {id:31,p:'P5',he:'כל אות הצמיחה ___ צמוד לשורה.',fr:'Chaque lettre développa une ___ longeant la ligne.',bl:[{ah:'קו בסיס',af:'ligne de base',th:['קו בסיס','זנב','חלק','קשר'],tf:['ligne de base','queue','partie','connexion']}]},
+  {id:32,p:'P5',he:'בסוף מילה, לא נדרשה ___ שמאלה.',fr:'En fin de mot, aucune ___ vers la gauche n\'était nécessaire.',bl:[{ah:'מתיחה',af:'extension',th:['מתיחה','הזזה','פנייה','כתיבה'],tf:['extension','déplacement','rotation','écriture']}]},
+  {id:33,p:'P5',he:'האותיות שמרו על ___ המקורית שלהן בסוף מילה.',fr:'Les lettres conservèrent leur forme ___ en fin de mot.',bl:[{ah:'הצורה',af:'originelle',th:['הצורה','הגרסה','הכתיבה','הצליל'],tf:['originelle','normale','récente','cursive']}]},
+  {id:34,p:'P5',he:"האות ך' התקשתה להשתלב בגלל ה___ שלה.",fr:'La lettre ך ne s\'intégrait pas bien à cause de sa ___.',bl:[{ah:'זנב',af:'queue',th:['זנב','צורה','גודל','כיוון'],tf:['queue','forme','taille','direction']}]},
+  {id:35,p:'P5',he:'האות הגיעה בסוף מילה ולכן ___ על צורתה.',fr:'La lettre apparaissait en fin de mot et a donc ___ sa forme.',bl:[{ah:'שמרה',af:'conservé',th:['שמרה','שינתה','אבדה','פיתחה'],tf:['conservé','modifié','perdu','développé']}]},
+  {id:36,p:'P6',he:"הסיפור של מ' סופית קצת ___.",fr:'L\'histoire du Mem final est un peu ___.',bl:[{ah:'שונה',af:'différente',th:['שונה','פשוטה','ברורה','מסובכת'],tf:['différente','simple','claire','complexe']}]},
+  {id:37,p:'P6',he:"הקושי לחבר את מ' לא נבע מ___ אלא מצורה סגורה.",fr:'La difficulté à relier le Mem ne venait pas d\'une ___ mais d\'une forme fermée.',bl:[{ah:'זנב',af:'queue',th:['זנב','קו','גודל','כיוון'],tf:['queue','ligne','taille','direction']}]},
+  {id:38,p:'P6',he:'הקושי נבע מכיוון שהייתה ___ סגורה.',fr:'La difficulté venait de sa forme ___.',bl:[{ah:'צורה',af:'fermée',th:['צורה','גרסה','כתיבה','שורה'],tf:['fermée','ouverte','cursive','normale']}]},
+  {id:39,p:'P6',he:"___ האבולוציונית הראשונה של מ' נראתה אחרת.",fr:'La première ___ évolutive du Mem présentait un aspect différent.',bl:[{ah:'הגרסה',af:'version',th:['הגרסה','הצורה','הכתיבה','השיטה'],tf:['version','forme','écriture','méthode']}]},
+  {id:40,p:'P6',he:"ובהמשך מ' הפכה לאות שאנחנו ___ ואוהבים.",fr:'Et ensuite le Mem est devenu la lettre que nous ___ et apprécions.',bl:[{ah:'מכירים',af:'connaissons',th:['מכירים','רואים','כותבים','לומדים'],tf:['connaissons','voyons','écrivons','apprenons']}]},
+  {id:41,p:'P6',he:"לאות מ' הייתה ___ מיוחדת שקשה לחבר.",fr:'La lettre Mem avait une ___ particulière difficile à relier.',bl:[{ah:'צורה',af:'forme',th:['צורה','גרסה','שיטה','דרך'],tf:['forme','version','méthode','façon']}]},
+  {id:42,p:'P6',he:"האות מ' ___ למ' שאנחנו מכירים לאחר תהליך אבולוציוני.",fr:'La lettre Mem ___ le Mem que nous connaissons après un processus évolutif.',bl:[{ah:'הפכה',af:'est devenue',th:['הפכה','נשארה','נעלמה','התחילה'],tf:['est devenue','est restée','a disparu','a commencé']}]},
+  {id:43,p:'P7',he:'בתלמוד ___ נכתב שנביאי ישראל שינו את צורת האותיות.',fr:'Le Talmud ___ affirme que les prophètes d\'Israël ont modifié la forme des lettres.',bl:[{ah:'הבבלי',af:'de Babylone',th:['הבבלי','הירושלמי','הפיניקי','הארמי'],tf:['de Babylone','de Jérusalem','phénicien','araméen']}]},
+  {id:44,p:'P7',he:'נביאי ישראל נקראו גם ___.',fr:'Les prophètes d\'Israël étaient aussi appelés ___.',bl:[{ah:'צופים',af:'Tsofim',th:['צופים','כהנים','לומדים','סופרים'],tf:['Tsofim','prêtres','savants','scribes']}]},
+  {id:45,p:'P7',he:'שם האותיות מנצפ"כ מגיע מהמילה ___.',fr:'Le nom Manzapakh vient du mot ___.',bl:[{ah:'צופים',af:'Tsofim',th:['צופים','נביאים','כהנים','חכמים'],tf:['Tsofim','prophètes','prêtres','sages']}]},
+  {id:46,p:'P7',he:'האותיות הסופיות זכו ל___ מנצפ"כ.',fr:'Les lettres finales reçurent l\'___ Manzapakh.',bl:[{ah:'כינוי',af:'appellation',th:['כינוי','שם','תואר','ביטוי'],tf:['appellation','nom','titre','expression']}]},
+  {id:47,p:'P7',he:'הגאון מווילנה הסביר שהן מסמלות ___ הלכות.',fr:'Le Gaon de Vilna expliqua qu\'elles symbolisent ___ lois.',bl:[{ah:'חמש',af:'cinq',th:['חמש','שלוש','שבע','עשר'],tf:['cinq','trois','sept','dix']}]},
+  {id:48,p:'P7',he:'ההלכות ___ ממשה רבנו.',fr:'Les lois ___ par Moïse notre maître.',bl:[{ah:'שנשתכחו',af:'oubliées',th:['שנשתכחו','שנלמדו','שנכתבו','שנשמרו'],tf:['oubliées','apprises','écrites','conservées']}]},
+  {id:49,p:'P7',he:'חמש האותיות ___ את חמש ההלכות.',fr:'Les cinq lettres ___ les cinq lois.',bl:[{ah:'מסמלות',af:'symbolisent',th:['מסמלות','מייצגות','מציינות','מזכירות'],tf:['symbolisent','représentent','indiquent','rappellent']}]},
+  {id:50,p:'P8',he:'האותיות הסופיות הן סיפור ___ לעברית.',fr:'Les lettres finales constituent une particularité ___ de l\'hébreu.',bl:[{ah:'מיוחד',af:'unique',th:['מיוחד','רגיל','פשוט','נפוץ'],tf:['unique','normale','simple','courante']}]},
+  {id:51,p:'P8',he:'עברית היא אחת מכמה ___ בודדות שמשתמשות באותיות סופיות.',fr:'L\'hébreu est l\'une des rares ___ à utiliser des lettres finales.',bl:[{ah:'שפות',af:'langues',th:['שפות','כתבים','מערכות','אלפביתים'],tf:['langues','écritures','systèmes','alphabets']}]},
+  {id:52,p:'P8',he:'גם בערבית יש ___ סופיות.',fr:'L\'arabe possède aussi des ___ finales.',bl:[{ah:'אותיות',af:'lettres',th:['אותיות','מילים','צלילים','כתבים'],tf:['lettres','mots','sons','écritures']}]},
+  {id:53,p:'P8',he:'ביוונית, האות הסופית של ___ נכתבת אחרת.',fr:'En grec, la lettre finale de ___ s\'écrit différemment.',bl:[{ah:'סיגמה',af:'sigma',th:['סיגמה','אלפא','בטא','גמא'],tf:['sigma','alpha','bêta','gamma']}]},
+  {id:54,p:'P8',he:"___ היא שפה שמדברים בה בסין ויש בה אותיות סופיות.",fr:'Le ___ est une langue parlée en Chine qui possède des lettres finales.',bl:[{ah:"מנצ'ורית",af:'mandchou',th:["מנצ'ורית",'יפנית','סינית','קוריאנית'],tf:['mandchou','japonais','chinois','coréen']}]},
+  {id:55,p:'P8',he:'הרוב המכריע של השפות ___ יופי בלי אותיות סופיות.',fr:'La grande majorité des langues ___ parfaitement sans lettres finales.',bl:[{ah:'מסתדר',af:"s'en sort",th:['מסתדר','צריך','רוצה','מכיר'],tf:["s'en sort",'a besoin','veut','connaît']}]},
+  {id:56,p:'P8',he:'האותיות הסופיות ___ את הכתב העברי ממרבית הכתבים בעולם.',fr:'Les lettres finales ___ l\'écriture hébraïque de la plupart des écritures du monde.',bl:[{ah:'מבדילות',af:'distinguent',th:['מבדילות','מחברות','מסבירות','מגדירות'],tf:['distinguent','relient','expliquent','définissent']}]}
+];
+
+const M4=[
+  {id:1,p:'P1',he:'האותיות הסופיות נכתבו בעבר באמצע המילה',fr:'Les lettres finales s\'écrivaient autrefois au milieu du mot',
+   wh:{'האותיות':'les lettres','הסופיות':'finales','נכתבו':'s\'écrivaient','בעבר':'autrefois','באמצע':'au milieu','המילה':'du mot'}},
+  {id:2,p:'P1',he:'הן היו האותיות הרגילות של הכתב',fr:'Elles étaient les lettres standard de l\'écriture',
+   wh:{'הן':'elles','היו':'étaient','האותיות':'les lettres','הרגילות':'standard','של':'de','הכתב':"l'écriture"}},
+  {id:3,p:'P1',he:'הגרסה הרגילה של מנצפ"כ הגיעה אחר כך',fr:'La version normale de Manzapakh est arrivée plus tard',
+   wh:{'הגרסה':'la version','הרגילה':'normale','של':'de','מנצפ"כ':'Manzapakh','הגיעה':"est arrivée",'אחר כך':'plus tard'}},
+  {id:4,p:'P1',he:'הכתיבה הפכה למחוברת כשעברו לקלף',fr:'L\'écriture devint cursive lorsqu\'on passa au parchemin',
+   wh:{'הכתיבה':"l'écriture",'הפכה':'devint','למחוברת':'cursive','כשעברו':"lorsqu'on passa",'לקלף':'au parchemin'}},
+  {id:5,p:'P1',he:'האבולוציה של האותיות מתחילה בכתב הפרוטו-כנעני',fr:'L\'évolution des lettres commence avec l\'écriture proto-cananéenne',
+   wh:{'האבולוציה':"l'évolution",'של':'des','האותיות':'lettres','מתחילה':'commence','בכתב':"avec l'écriture",'הפרוטו-כנעני':'proto-cananéenne'}},
+  {id:6,p:'P2',he:'כל עיצור מיוצג על ידי ציור',fr:'Chaque consonne est représentée par un dessin',
+   wh:{'כל':'chaque','עיצור':'consonne','מיוצג':'est représentée','על ידי':'par','ציור':'un dessin'}},
+  {id:7,p:'P2',he:'הכתב התפתח על בסיס ההירוגליפים המצריים',fr:'L\'écriture s\'est développée à partir des hiéroglyphes égyptiens',
+   wh:{'הכתב':"l'écriture",'התפתח':"s'est développée",'על בסיס':'à partir de','ההירוגליפים':'des hiéroglyphes','המצריים':'égyptiens'}},
+  {id:8,p:'P2',he:'זהו העיקרון האקרופוני של הכתב',fr:'C\'est le principe acrophonique de l\'écriture',
+   wh:{'זהו':"c'est",'העיקרון':'le principe','האקרופוני':'acrophonique','של':'de','הכתב':"l'écriture"}},
+  {id:9,p:'P2',he:'ראש ייצג את הצליל ר בכתב הקדום',fr:'Rosh représentait le son R dans l\'écriture ancienne',
+   wh:{'ראש':'Rosh','ייצג':'représentait','את':'le','הצליל':'son','ר':'R','בכתב':'dans l\'écriture','הקדום':'ancienne'}},
+  {id:10,p:'P2',he:'הסימנים הפכו לאותיות שאנחנו מכירים',fr:'Les signes sont devenus les lettres que nous connaissons',
+   wh:{'הסימנים':'les signes','הפכו':'sont devenus','לאותיות':'les lettres','שאנחנו':'que nous','מכירים':'connaissons'}},
+  {id:11,p:'P3',he:'מהפיניקי התפתח הכתב הארמי',fr:'De l\'écriture phénicienne s\'est développée l\'écriture araméenne',
+   wh:{'מהפיניקי':"de l'écriture phénicienne",'התפתח':"s'est développée",'הכתב':'l\'écriture','הארמי':'araméenne'}},
+  {id:12,p:'P3',he:'הכתב העברי נקרא גם כתב אשורי',fr:'L\'écriture hébraïque est aussi appelée écriture assyrienne',
+   wh:{'הכתב':"l'écriture",'העברי':'hébraïque','נקרא':'est appelée','גם':'aussi','כתב':'écriture','אשורי':'assyrienne'}},
+  {id:13,p:'P3',he:'הראש הפך לאות ריש שאנחנו מכירים',fr:'La tête est devenue la lettre Reish que nous connaissons',
+   wh:{'הראש':'la tête','הפך':"est devenue",'לאות':'la lettre','ריש':'Reish','שאנחנו':'que nous','מכירים':'connaissons'}},
+  {id:14,p:'P3',he:'הפיניקי התפתח מהפרוטו-כנעני',fr:'Le phénicien s\'est développé à partir du proto-cananéen',
+   wh:{'הפיניקי':'le phénicien','התפתח':"s'est développé",'מהפרוטו-כנעני':'à partir du proto-cananéen'}},
+  {id:15,p:'P3',he:'הכתב הארמי התפתח באשור',fr:'L\'écriture araméenne s\'est développée en Assyrie',
+   wh:{'הכתב':"l'écriture",'הארמי':'araméenne','התפתח':"s'est développée",'באשור':'en Assyrie'}},
+  {id:16,p:'P4',he:'המעבר מאבן לקלף היה מהפכני',fr:'Le passage de la pierre au parchemin fut révolutionnaire',
+   wh:{'המעבר':'le passage','מאבן':'de la pierre','לקלף':'au parchemin','היה':'fut','מהפכני':'révolutionnaire'}},
+  {id:17,p:'P4',he:'הכתב הרך נכתב על קלף באמצעות קולמוס',fr:'L\'écriture souple était écrite sur parchemin à l\'aide d\'un calame',
+   wh:{'הכתב':"l'écriture",'הרך':'souple','נכתב':'était écrite','על':'sur','קלף':'parchemin','באמצעות':'à l\'aide de','קולמוס':'calame'}},
+  {id:18,p:'P4',he:'הכתיבה הפכה למהירה ומחוברת',fr:'L\'écriture devint rapide et cursive',
+   wh:{'הכתיבה':"l'écriture",'הפכה':'devint','למהירה':'rapide','ומחוברת':'et cursive'}},
+  {id:19,p:'P4',he:'היד נמשכת באופן טבעי לאות הבאה',fr:'La main est naturellement attirée vers la lettre suivante',
+   wh:{'היד':'la main','נמשכת':'est attirée','באופן טבעי':'naturellement','לאות':'vers la lettre','הבאה':'suivante'}},
+  {id:20,p:'P4',he:'הכתיבה ברצף שינתה את צורת האותיות',fr:'L\'écriture continue a modifié la forme des lettres',
+   wh:{'הכתיבה':"l'écriture",'ברצף':'continue','שינתה':'a modifié','את':'la','צורת':'forme','האותיות':'des lettres'}},
+  {id:21,p:'P5',he:"לאותיות ן ץ ף ך היו זנבות",fr:'Les lettres ן ץ ף ך avaient des queues',
+   wh:{'לאותיות':'les lettres','ן ץ ף ך':'ן ץ ף ך','היו':'avaient','זנבות':'des queues'}},
+  {id:22,p:'P5',he:'הזנב יורד מתחת לשורת הכתיבה',fr:'La queue descend sous la ligne d\'écriture',
+   wh:{'הזנב':'la queue','יורד':'descend','מתחת':'sous','לשורת':'la ligne','הכתיבה':"d'écriture"}},
+  {id:23,p:'P5',he:'כל אות הצמיחה קו בסיס חדש',fr:'Chaque lettre développa une nouvelle ligne de base',
+   wh:{'כל':'chaque','אות':'lettre','הצמיחה':'développa','קו בסיס':'ligne de base','חדש':'nouvelle'}},
+  {id:24,p:'P5',he:'בסוף מילה לא נדרשה מתיחה שמאלה',fr:'En fin de mot aucune extension vers la gauche n\'était nécessaire',
+   wh:{'בסוף':'en fin','מילה':'de mot','לא':'aucune','נדרשה':'n\'était nécessaire','מתיחה':'extension','שמאלה':'vers la gauche'}},
+  {id:25,p:'P5',he:'האותיות שמרו על צורתן המקורית',fr:'Les lettres conservèrent leur forme originelle',
+   wh:{'האותיות':'les lettres','שמרו':'conservèrent','על':'leur','צורתן':'forme','המקורית':'originelle'}},
+  {id:26,p:'P6',he:"הסיפור של מ' סופית שונה מהאחרות",fr:'L\'histoire du Mem final est différente des autres',
+   wh:{'הסיפור':"l'histoire",'של':'du','מ\' סופית':'Mem final','שונה':'est différente','מהאחרות':'des autres'}},
+  {id:27,p:'P6',he:'הקושי נבע מהצורה הסגורה של האות',fr:'La difficulté venait de la forme fermée de la lettre',
+   wh:{'הקושי':'la difficulté','נבע':'venait','מהצורה':'de la forme','הסגורה':'fermée','של':'de','האות':'la lettre'}},
+  {id:28,p:'P6',he:"מ' הפכה לאות שאנחנו מכירים ואוהבים",fr:'Le Mem est devenu la lettre que nous connaissons et aimons',
+   wh:{"מ'":'le Mem','הפכה':"est devenu",'לאות':'la lettre','שאנחנו':'que nous','מכירים':'connaissons','ואוהבים':'et aimons'}},
+  {id:29,p:'P6',he:"הגרסה הראשונה של מ' נראתה אחרת",fr:'La première version du Mem avait un aspect différent',
+   wh:{'הגרסה':'la version','הראשונה':'première','של':'du',"מ'":'Mem','נראתה':'avait un aspect','אחרת':'différent'}},
+  {id:30,p:'P6',he:'הצורה הסגורה גרמה לקושי בחיבור',fr:'La forme fermée causa une difficulté de liaison',
+   wh:{'הצורה':'la forme','הסגורה':'fermée','גרמה':'causa','לקושי':'une difficulté','בחיבור':'de liaison'}},
+  {id:31,p:'P7',he:'נביאי ישראל שינו את צורת האותיות',fr:'Les prophètes d\'Israël ont modifié la forme des lettres',
+   wh:{'נביאי':'les prophètes','ישראל':"d'Israël",'שינו':'ont modifié','את':'la','צורת':'forme','האותיות':'des lettres'}},
+  {id:32,p:'P7',he:'הנביאים נקראו צופים ומכאן השם',fr:'Les prophètes s\'appelaient Tsofim d\'où le nom',
+   wh:{'הנביאים':'les prophètes',"נקראו s'appelaient":'s\'appelaient','צופים':'Tsofim','ומכאן':"d'où",'השם':'le nom'}},
+  {id:33,p:'P7',he:'מנצפ"כ משמעותו מן הצופים',fr:'Manzapakh signifie "des guetteurs"',
+   wh:{'מנצפ"כ':'Manzapakh','משמעותו':'signifie','מן':'des','הצופים':'guetteurs'}},
+  {id:34,p:'P7',he:'הגאון מווילנה הסביר את משמעות האותיות',fr:'Le Gaon de Vilna a expliqué la signification des lettres',
+   wh:{'הגאון':'le Gaon','מווילנה':'de Vilna','הסביר':'a expliqué','את':'la','משמעות':'signification','האותיות':'des lettres'}},
+  {id:35,p:'P7',he:'האותיות מסמלות חמש הלכות שנשתכחו',fr:'Les lettres symbolisent cinq lois oubliées',
+   wh:{'האותיות':'les lettres','מסמלות':'symbolisent','חמש':'cinq','הלכות':'lois','שנשתכחו':'oubliées'}},
+  {id:36,p:'P8',he:'האותיות הסופיות הן תופעה מיוחדת בעברית',fr:'Les lettres finales sont un phénomène particulier en hébreu',
+   wh:{'האותיות':'les lettres','הסופיות':'finales','הן':'sont','תופעה':'un phénomène','מיוחדת':'particulier','בעברית':'en hébreu'}},
+  {id:37,p:'P8',he:'עברית היא אחת משפות בודדות עם אותיות סופיות',fr:'L\'hébreu est l\'une des rares langues avec des lettres finales',
+   wh:{'עברית':"l'hébreu",'היא':"est l'une",'משפות':'des langues','בודדות':'rares','עם':'avec','אותיות':'des lettres','סופיות':'finales'}},
+  {id:38,p:'P8',he:'בערבית ובמנצ\'ורית יש גם אותיות סופיות',fr:'En arabe et en mandchou il y a aussi des lettres finales',
+   wh:{'בערבית':'en arabe',"ובמנצ'ורית":'et en mandchou','יש':'il y a','גם':'aussi','אותיות':'des lettres','סופיות':'finales'}},
+  {id:39,p:'P8',he:'ביוונית הסיגמה הסופית נכתבת בצורה שונה',fr:'En grec le sigma final s\'écrit d\'une façon différente',
+   wh:{'ביוונית':'en grec','הסיגמה':'le sigma','הסופית':'final',"נכתבת s'écrit":"s'écrit",'בצורה':'d\'une façon','שונה':'différente'}},
+  {id:40,p:'P8',he:'מרבית השפות מסתדרות בלי אותיות סופיות',fr:'La plupart des langues s\'en sortent sans lettres finales',
+   wh:{'מרבית':'la plupart','השפות':'des langues','מסתדרות':"s'en sortent",'בלי':'sans','אותיות':'lettres','סופיות':'finales'}}
+];
+
+const M5=[
+  // Level 1 — Littéral
+  {id:1,lv:1,q:"Dans quel type d'écriture les lettres finales étaient-elles autrefois utilisées ?",choices:["À la fin des mots uniquement","Au milieu des mots, comme lettres standard","Seulement dans les textes religieux","Dans l'alphabet phénicien uniquement"],ans:1,expl:"Le texte affirme clairement que les lettres finales étaient autrefois les lettres standard, écrites au milieu des mots."},
+  {id:2,lv:1,q:"Sur quel système d'écriture l'alphabet proto-cananéen est-il basé ?",choices:["L'alphabet phénicien","Les cunéiformes mésopotamiens","Les hiéroglyphes égyptiens","L'écriture araméenne"],ans:2,expl:"Le texte précise que l'alphabet proto-cananéen s'est développé à partir des hiéroglyphes égyptiens."},
+  {id:3,lv:1,q:"Qu'est-ce que le principe acrophonique ?",choices:["Les lettres sont dessinées de gauche à droite","Chaque consonne est représentée par un objet dont le nom commence par ce son","Les voyelles sont omises dans l'écriture","Les lettres changent de forme en fin de mot"],ans:1,expl:"Le principe acrophonique signifie que chaque son est représenté par le dessin d'un objet dont le nom commence par ce son."},
+  {id:4,lv:1,q:"Quel support a remplacé la pierre pour l'écriture ?",choices:["Le bois et le métal","Le parchemin ou le papyrus","L'argile et la cire","Le tissu et le cuivre"],ans:1,expl:"Le texte mentionne explicitement le passage à l'écriture sur parchemin ou papyrus à l'aide d'un calame."},
+  {id:5,lv:1,q:"Quelle est la signification du nom 'Manzapakh' (מנצפ\"כ) ?",choices:["Les cinq lettres spéciales","Des guetteurs (מן צופים)","L'alphabet hébreu complet","Les lois de Moïse"],ans:1,expl:"Le Talmud de Babylone explique que les prophètes étaient appelés Tsofim (guetteurs), d'où le nom Manzapakh — מן צופים."},
+  {id:6,lv:1,q:"Combien de lois oubliées les lettres Manzapakh symbolisent-elles selon le Gaon de Vilna ?",choices:["Trois","Sept","Cinq","Douze"],ans:2,expl:"Le Gaon de Vilna expliqua que les cinq lettres finales symbolisent les cinq lois oubliées par Moïse."},
+  {id:7,lv:1,q:"Pourquoi les lettres ן ץ ף ך avaient-elles du mal à s'intégrer à la nouvelle écriture ?",choices:["Elles étaient trop petites","Elles possédaient des queues descendant sous la ligne","Elles ressemblaient trop aux lettres araméennes","Elles n'existaient pas encore"],ans:1,expl:"Le texte explique que ces lettres avaient des 'queues' — une partie descendant sous la ligne — ce qui compliquait la connexion cursive."},
+  {id:8,lv:1,q:"Dans quelles autres langues trouve-t-on des lettres finales ?",choices:["Latin, grec, arabe","Arabe, mandchou, grec","Russe, hébreu, chinois","Persan, turc, japonais"],ans:1,expl:"Le texte mentionne l'arabe, le mandchou et le grec (pour la lettre sigma) comme autres langues utilisant des lettres finales."},
+  // Level 2 — Inférentiel
+  {id:9,lv:2,q:"Pourquoi le passage à l'écriture sur parchemin a-t-il favorisé l'apparition des formes finales ?",choices:["Le parchemin était moins solide que la pierre","L'écriture cursive tirait naturellement les lettres vers la suivante, modifiant les formes","Les scribes avaient moins de place sur le parchemin","Les lettres phéniciennes ne convenaient pas au parchemin"],ans:1,expl:"La fluidité de l'écriture cursive poussait la main vers la lettre suivante, ce qui força l'adaptation des lettres à queue — sauf en fin de mot où aucune connexion n'était nécessaire."},
+  {id:10,lv:2,q:"Pourquoi le Mem final (מ) a-t-il une origine différente des autres lettres finales ?",choices:["Il a été inventé par les Babyloniens","Sa difficulté venait de sa forme fermée, pas d'une queue","Il est apparu plus tard dans l'histoire","Il provient de l'alphabet latin"],ans:1,expl:"Contrairement à ן ץ ף ך qui avaient des queues, le Mem posait problème à cause de sa forme fermée, ce qui entraîna une évolution différente."},
+  {id:11,lv:2,q:"Que nous révèle l'existence de formes différentes en fin de mot sur la nature de l'écriture hébraïque ?",choices:["Elle est purement phonétique","Elle a conservé des traces de son évolution historique dans sa forme actuelle","Elle est identique à l'écriture araméenne","Elle a été inventée récemment"],ans:1,expl:"Les formes finales sont un 'fossile vivant' — elles témoignent directement du processus de cursivisation qui a transformé l'écriture."},
+  {id:12,lv:2,q:"Pourquoi la lettre ק (Qof) n'a-t-elle pas de forme finale ?",choices:["Elle est trop récente pour avoir une forme finale","Elle n'avait pas de queue descendante et s'écrivait d'une façon permettant la connexion naturelle","Elle a disparu de l'alphabet","Les scribes l'ont oublié"],ans:1,expl:"Le texte explique que la queue de Qof ne descendait pas sous la ligne de la même façon, et que son tracé permettait une connexion naturelle sans adaptation."},
+  {id:13,lv:2,q:"Quelle conclusion peut-on tirer de l'explication talmudique sur les lettres finales ?",choices:["Les rabbins ignoraient l'histoire réelle des lettres","La tradition religieuse cherchait un sens symbolique à une réalité historique","Le Talmud est une source historique fiable sur l'écriture","Les prophètes ont réellement inventé l'alphabet"],ans:1,expl:"L'explication talmudique attribuant les lettres aux prophètes montre comment la tradition juive a cherché à donner un sens spirituel et symbolique à un phénomène dont l'origine est en réalité paléographique."},
+  {id:14,lv:2,q:"Pourquoi l'hébreu est-il qualifié de 'particulier' pour ses lettres finales ?",choices:["C'est la plus vieille langue du monde","Il est presque la seule langue moderne à avoir conservé cette distinction de forme","Ses lettres sont les plus belles","Il n'existe pas d'autre alphabet sémitique"],ans:1,expl:"La très grande majorité des langues du monde n'utilise pas de formes différentes selon la position du caractère dans le mot — l'hébreu fait partie des rares exceptions."},
+  {id:15,lv:2,q:"Qu'est-ce que l'évolution de l'alphabet nous apprend sur la relation entre écriture et pratique ?",choices:["L'écriture est immuable une fois créée","Les systèmes d'écriture s'adaptent aux besoins et aux supports pratiques","La beauté est plus importante que la lisibilité","Les lettres sont des symboles purement arbitraires"],ans:1,expl:"Toute l'histoire décrite montre que l'écriture évolue en réponse aux outils, aux supports et aux habitudes pratiques — de la pierre au parchemin, de la gravure à la plume."},
+  {id:16,lv:2,q:"Pourquoi les scribes n'ont-ils pas simplifié toutes les lettres de la même manière ?",choices:["Par manque de temps","Parce que chaque lettre avait une structure propre qui nécessitait une adaptation spécifique","Les scribes travaillaient dans des pays différents","Par décision rabbinique"],ans:1,expl:"Chaque lettre avait une morphologie propre : certaines avaient des queues (ן ץ ף ך), d'autres une forme fermée (מ), d'autres encore une structure permettant la connexion naturelle (ק). Chaque cas appelait une solution différente."},
+  // Level 3 — Réflexif
+  {id:17,lv:3,q:"Pensez-vous que l'explication paléographique et l'explication talmudique des lettres finales sont-elles contradictoires ou complémentaires ? Expliquez.",type:'free',sug:"Ces deux explications opèrent sur des plans différents : l'une est historique et matérielle, l'autre est symbolique et spirituelle. La tradition talmudique ne cherche pas à expliquer le mécanisme graphique mais à donner un sens à la réalité observée. Elles sont donc complémentaires — chacune répond à une question différente : 'comment ?' vs 'pourquoi ?'"},
+  {id:18,lv:3,q:"En quoi l'histoire des lettres finales illustre-t-elle le concept général d'évolution linguistique ? Donnez un exemple tiré du texte.",type:'free',sug:"L'histoire des lettres finales montre que les systèmes linguistiques et graphiques évoluent par adaptation progressive aux contraintes pratiques. Par exemple, le passage de la pierre au parchemin n'a pas été planifié pour créer des lettres finales — c'est la pratique cursive qui a naturellement fait diverger les formes selon leur position. L'évolution linguistique suit souvent ce même principe d'adaptation non intentionnelle."},
+  {id:19,lv:3,q:"Imaginez que vous êtes un scribe du IIe siècle avant notre ère passant de la gravure sur pierre à l'écriture sur parchemin. Décrivez les défis pratiques que vous auriez rencontrés.",type:'free',sug:"Un scribe de cette époque aurait dû réapprendre ses gestes : la gravure exige de la pression et des mouvements lents, tandis que le calame demande légèreté et fluidité. Les lettres à queue (ן ץ) l'auraient particulièrement gêné car tirer le calame vers le bas puis revenir vers la gauche pour la lettre suivante crée une rupture dans le flux d'écriture. Il aurait naturellement développé des raccourcis gestuels."},
+  {id:20,lv:3,q:"Les lettres finales hébraïques ont survécu depuis l'Antiquité jusqu'à nos jours. Quels facteurs selon vous expliquent cette remarquable continuité ?",type:'free',sug:"Plusieurs facteurs expliquent cette continuité : la centralité des textes sacrés (Torah, Talmud) qui ont fixé les formes graphiques, la pratique millénaire de la copie des textes religieux, le rôle des soferim (scribes) comme gardiens de la tradition, et plus récemment la codification de l'écriture moderne lors de la renaissance de l'hébreu au XIXe-XXe siècle."},
+  {id:21,lv:3,q:"Pourquoi selon vous si peu de langues utilisent-elles des formes de lettres différentes selon la position dans le mot ? Qu'est-ce que cela révèle sur l'hébreu ?",type:'free',sug:"La plupart des langues ont rationalisé ou simplifié leurs systèmes d'écriture au fil du temps, éliminant les complexités non essentielles. L'hébreu a conservé cette distinction car elle était ancrée dans une tradition religieuse et textuelle très forte. Cela révèle à la fois la conservativité des systèmes d'écriture sacralisés et la richesse historique encodée dans l'alphabet hébreu moderne."},
+  {id:22,lv:3,q:"Le texte mentionne que l'alphabet proto-cananéen utilisait des images pour représenter des sons. Voyez-vous des traces de cette origine dans les lettres hébraïques que vous connaissez ?",type:'free',sug:"Oui — plusieurs lettres hébraïques gardent une trace visuelle de leur origine pictographique. L'Alef (א) évoque une tête de bœuf (aleph en phénicien), le Bet (ב) ressemble à une maison vue de côté (bayit = maison), l'Ayin (ע) au cercle d'un œil (ayin = œil), et le Mem (מ) aux ondulations de l'eau (maïm = eau). Ces correspondances ne sont plus immédiatement visibles mais restent dans les noms des lettres."},
+  {id:23,lv:3,q:"Si vous deviez réformer l'hébreu moderne et supprimer les lettres finales pour simplifier l'apprentissage, quels seraient les arguments pour et contre cette réforme ?",type:'free',sug:"Pour : simplification de l'apprentissage (moins de formes à mémoriser), harmonisation avec la majorité des systèmes d'écriture, réduction des erreurs orthographiques. Contre : rupture avec une tradition millénaire, perte d'un marqueur visuel utile (la fin de mot est immédiatement visible), atteinte à l'identité culturelle et religieuse, et risque de rendre illisibles des siècles de textes hébraïques existants."},
+  {id:24,lv:3,q:"Le passage de la pierre au parchemin est décrit comme une 'révolution'. En quoi les transitions technologiques modernes (imprimerie, ordinateur, smartphone) ont-elles également transformé nos systèmes d'écriture ?",type:'free',sug:"Chaque transition technologique transforme l'écriture : l'imprimerie a normalisé les formes des lettres et créé la distinction entre majuscules et minuscules ; l'ordinateur a introduit les polices de caractères et la frappe sans stylo ; le smartphone a engendré les abréviations, les emoji et l'écriture phonétique des SMS. Comme le parchemin avec les lettres finales, chaque nouveau support crée de nouvelles contraintes qui font évoluer les formes et les usages graphiques."}
+];
+
+// ══════════════════════════════════════════════
+// UTILS
+// ══════════════════════════════════════════════
+function showPage(id,btn){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  if(btn)btn.classList.add('active');
+}
+function paraColor(p){return PARA_COLORS[parseInt(p.replace('P',''))-1]||'pc-P1'}
+function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
+
+// ══════════════════════════════════════════════
+// MODULE 1
+// ══════════════════════════════════════════════
+let m1Active=null;const m1S={};
+function m1WS(txt,wmap){
+  let r=txt;
+  Object.keys(wmap).sort((a,b)=>b.length-a.length).forEach(w=>{
+    const s=w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    r=r.replace(new RegExp('('+s+')','g'),'<span class="wrd" data-w="'+w+'">'+w+'</span>');
+  });
+  return r;
+}
+function m1GetS(pid,lang){
+  const k=pid+'-'+lang;
+  if(!m1S[k])m1S[k]={k,pid,lang,paused:false,utter:null,timer:null};
+  m1S[k].pb=document.getElementById('m1pb-'+k);
+  m1S[k].ab=document.getElementById('m1ab-'+k);
+  m1S[k].pause=document.getElementById('m1pa-'+k);
+  return m1S[k];
+}
+function m1Reset(s){
+  if(!s)return;
+  if(s.ab){s.ab.classList.remove('playing');s.ab.textContent=s.lang==='he'?'▶ עברית':'▶ Français';}
+  if(s.pause){s.pause.classList.remove('vis','paused');s.pause.textContent='⏸ Pause';}
+  if(s.pb){s.pb.style.width='0%';s.pb.parentElement.style.display='none';}
+  clearInterval(s.timer);s.timer=null;s.paused=false;
+}
+function m1Prog(s,dur){
+  clearInterval(s.timer);const start=Date.now();
+  s.timer=setInterval(()=>{
+    const p=Math.min(((Date.now()-start)/1000/dur)*100,100);
+    if(s.pb)s.pb.style.width=p+'%';
+    if(p>=100)clearInterval(s.timer);
+  },120);
+}
+function m1Play(pid,lang){
+  const p=M1.find(d=>d.id===pid);const s=m1GetS(pid,lang);
+  if(m1Active&&m1Active!==s){speechSynthesis.cancel();m1Reset(m1Active);m1Active=null;}
+  if(s.paused){
+    speechSynthesis.resume();s.paused=false;
+    if(s.pause){s.pause.textContent='⏸ Pause';s.pause.classList.remove('paused');}
+    m1Prog(s,s.utter?s.utter.text.length/12:10);return;
+  }
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(lang==='he'?p.he:p.fr);
+  u.lang=lang==='he'?'he-IL':'fr-FR';u.rate=0.85;s.utter=u;m1Active=s;
+  if(s.ab)s.ab.classList.add('playing');
+  if(s.pause)s.pause.classList.add('vis');
+  if(s.pb){s.pb.parentElement.style.display='block';s.pb.className='pbar '+(lang==='he'?'pbar-he':'pbar-fr');}
+  m1Prog(s,u.text.length/12);
+  u.onend=u.onerror=()=>{m1Reset(s);m1Active=null;};
+  speechSynthesis.speak(u);
+}
+function m1Pause(pid,lang){
+  const s=m1GetS(pid,lang);if(!m1Active||m1Active!==s)return;
+  if(!s.paused){speechSynthesis.pause();s.paused=true;clearInterval(s.timer);if(s.pause){s.pause.textContent='▶ Reprendre';s.pause.classList.add('paused');}}
+  else m1Play(pid,lang);
+}
+function m1Build(){
+  document.getElementById('m1-paras').innerHTML=M1.map(p=>`
+    <div class="para-card">
+      <div class="para-card-head">
+        <div class="para-head-left">
+          <span class="para-tag ${paraColor(p.id)}">${p.id}</span>
+          <span class="para-title-txt">${PARA_TITLES[p.id]}</span>
+        </div>
+        <div class="audio-group">
+          <button id="m1ab-${p.id}-he" class="aud-btn" onclick="m1Play('${p.id}','he')">▶ עברית</button>
+          <button id="m1pa-${p.id}-he" class="pause-btn" onclick="m1Pause('${p.id}','he')">⏸ Pause</button>
+          <button id="m1ab-${p.id}-fr" class="aud-btn" onclick="m1Play('${p.id}','fr')">▶ Français</button>
+          <button id="m1pa-${p.id}-fr" class="pause-btn" onclick="m1Pause('${p.id}','fr')">⏸ Pause</button>
+        </div>
+      </div>
+      <div class="pbar-wrap" style="display:none"><div id="m1pb-${p.id}-he" class="pbar pbar-he"></div></div>
+      <div class="pbar-wrap" style="display:none"><div id="m1pb-${p.id}-fr" class="pbar pbar-fr"></div></div>
+      <div class="m1-grid">
+        <div class="col-he"><div class="col-lbl">עברית</div><div class="txt-he">${m1WS(p.he,p.w)}</div></div>
+        <div class="col-fr"><div class="col-lbl">FRANÇAIS</div><div class="txt-fr">${p.fr}</div></div>
+      </div>
+    </div>`).join('');
+  const tip=document.getElementById('m1-tip');
+  document.addEventListener('mouseover',e=>{
+    const el=e.target.closest('.wrd');if(!el)return;
+    const card=el.closest('.para-card');
+    const pid=card.querySelector('.para-tag').textContent;
+    const par=M1.find(d=>d.id===pid);
+    const tr=par&&par.w[el.dataset.w];
+    if(tr){tip.textContent=tr;tip.style.display='block';}
+  });
+  document.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-32)+'px';});
+  document.addEventListener('mouseout',e=>{if(!e.target.closest('.wrd'))tip.style.display='none';});
+}
+
+// ══════════════════════════════════════════════
+// MODULE 2
+// ══════════════════════════════════════════════
+const m2Seen=new Set();let m2FP='all',m2FG='all';
+const GC={n:'gp-n',v:'gp-v',adj:'gp-adj',exp:'gp-exp'};
+const GL={n:'nom',v:'verbe',adj:'adjectif',exp:'expression'};
+function m2Upd(){
+  const p=Math.round((m2Seen.size/40)*100);
+  document.getElementById('m2-pfill').style.width=p+'%';
+  document.getElementById('m2-plbl').textContent=m2Seen.size+' / 40 mots vus';
+  document.getElementById('m2-stats').innerHTML=
+    `<div class="m2-stat"><div class="m2-stat-num">${m2Seen.size}</div><div class="m2-stat-lbl">Vus</div></div>`+
+    `<div class="m2-stat"><div class="m2-stat-num">${40-m2Seen.size}</div><div class="m2-stat-lbl">Restants</div></div>`+
+    `<div class="m2-stat"><div class="m2-stat-num">${p}%</div><div class="m2-stat-lbl">Progression</div></div>`;
+}
+function m2Render(){
+  const f=M2.filter(w=>(m2FP==='all'||w.p===m2FP)&&(m2FG==='all'||w.g===m2FG));
+  const g=document.getElementById('m2-grid');
+  if(!f.length){g.innerHTML='<div style="padding:2rem;text-align:center;color:var(--text2);grid-column:1/-1">Aucun mot pour cette sélection.</div>';return;}
+  g.innerHTML=f.map(w=>`
+    <div class="m2-card${m2Seen.has(w.id)?' seen':''}" id="m2c-${w.id}" onclick="m2Flip(${w.id})">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <span class="para-tag ${paraColor(w.p)}" style="font-size:10px;padding:2px 8px">${w.p}</span>
+        <span class="gram-pill ${GC[w.g]}">${GL[w.g]}</span>
+      </div>
+      <div class="wrd-main" id="m2wm-${w.id}">${w.pl}</div>
+      <div class="wrd-nikoud" id="m2wn-${w.id}">${w.he}</div>
+      <div class="translit">${w.tr}</div>
+      <div class="m2-div"></div>
+      <div class="m2-tr">${w.fr}</div>
+      <div class="m2-ex">${w.ex}</div>
+      <div class="m2-exfr">${w.exfr}</div>
+      <div class="aud-row">
+        <button class="snd-btn" id="m2snd-${w.id}" onclick="event.stopPropagation();m2Play(${w.id})">▶ écouter</button>
+      </div>
+    </div>`).join('');
+}
+function m2Flip(id){
+  const c=document.getElementById('m2c-'+id);
+  if(c){c.classList.toggle('flipped');m2Seen.add(id);c.classList.add('seen');m2Upd();}
+}
+function m2Play(id){
+  const w=M2.find(x=>x.id===id);if(!w)return;
+  const wm=document.getElementById('m2wm-'+id),wn=document.getElementById('m2wn-'+id),btn=document.getElementById('m2snd-'+id);
+  if(window._m2a)speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(w.pl);u.lang='he-IL';u.rate=0.8;window._m2a=u;
+  if(wm)wm.style.display='none';if(wn)wn.style.display='block';
+  if(btn){btn.classList.add('playing');btn.textContent='■ stop';}
+  u.onend=u.onerror=()=>{if(wm)wm.style.display='block';if(wn)wn.style.display='none';if(btn){btn.classList.remove('playing');btn.textContent='▶ écouter';}window._m2a=null;};
+  speechSynthesis.speak(u);
+}
+function m2Build(){
+  document.querySelectorAll('.pill').forEach(b=>{
+    b.addEventListener('click',()=>{
+      const f=b.dataset.f,v=b.dataset.v;
+      if(!f)return;
+      document.querySelectorAll('.pill[data-f="'+f+'"]').forEach(x=>x.classList.remove('active'));
+      b.classList.add('active');
+      if(f==='para')m2FP=v;else m2FG=v;
+      m2Render();
+    });
+  });
+  m2Render();m2Upd();
+}
+
+// ══════════════════════════════════════════════
+// MODULE 3
+// ══════════════════════════════════════════════
+let m3Lang='he',m3Cur=0,m3Score=0,m3Ans={},m3Val={},m3FP='all';
+function m3Filtered(){return m3FP==='all'?M3:M3.filter(e=>e.p===m3FP);}
+function m3SetLang(l){
+  m3Lang=l;
+  document.getElementById('m3-lt-he').classList.toggle('active',l==='he');
+  document.getElementById('m3-lt-fr').classList.toggle('active',l==='fr');
+  m3Render();
+}
+function m3BuildFilters(){
+  document.getElementById('m3-filters').innerHTML=
+    ['all','P1','P2','P3','P4','P5','P6','P7','P8'].map(p=>
+      `<button class="pill${m3FP===p?' active':''}" onclick="m3Filter('${p}')">${p==='all'?'Tous':p}</button>`).join('');
+}
+function m3Filter(p){m3FP=p;m3Cur=0;m3BuildFilters();m3Render();}
+function m3Render(){
+  const list=m3Filtered(),total=list.length;
+  document.getElementById('m3-stot').textContent='/ '+total;
+  if(m3Cur>=total){m3ShowFinal();return;}
+  document.getElementById('m3-final').style.display='none';
+  document.getElementById('m3-wrap').style.display='block';
+  const ex=list[m3Cur];
+  document.getElementById('m3-nav').textContent=(m3Cur+1)+' / '+total;
+  document.getElementById('m3-pfill').style.width=(Object.keys(m3Val).length/total*100)+'%';
+  const ans=m3Ans[ex.id]||{},val=m3Val[ex.id],isFr=m3Lang==='fr';
+  let sent=isFr?ex.fr:ex.he;
+  ex.bl.forEach((b,i)=>{
+    const f=ans[i],ok=val&&(isFr?f===b.af:f===b.ah),bad=val&&f&&!ok;
+    const cls='blank'+(f?' filled':'')+(val?(ok?' correct':bad?' wrong':''):'');
+    sent=sent.replace('___','<span class="'+cls+'" onclick="m3CB('+ex.id+','+i+')">'+(f||'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')+'</span>');
+  });
+  const usedV=Object.values(ans);
+  const allT=[...new Set(ex.bl.flatMap(b=>isFr?b.tf:b.th))];
+  const tiles=allT.map(t=>{
+    const v=M2.find(w=>w.pl===t||w.fr===t);
+    const tip=isFr?(v?v.pl:t):(v?v.fr:t);
+    return `<div class="tile${!val&&usedV.includes(t)?' used':''}" onclick="m3ST('${t.replace(/'/g,"\\'")}',${ex.id})">${t}<span class="tile-tip">${tip}</span></div>`;
+  }).join('');
+  let fb='';
+  if(val){
+    const ok=ex.bl.every((b,i)=>isFr?ans[i]===b.af:ans[i]===b.ah);
+    fb=ok?'<span class="ex-fb ok">✓ Correct !</span>':'<span class="ex-fb ko">✗ Incorrect</span>';
+    if(!ok)fb+=`<div class="ans-reveal" style="display:block">Réponse : ${ex.bl.map((b,i)=>'['+( isFr?b.af:b.ah)+']').join(' · ')}</div>`;
+  }
+  document.getElementById('m3-wrap').innerHTML=`
+    <div class="ex-card">
+      <span class="ex-para-tag ${paraColor(ex.p)}">${ex.p} — ${PARA_TITLES[ex.p]}</span>
+      <div class="ex-sentence${isFr?' fr':''}">${sent}</div>
+      <div class="tiles-wrap">${tiles}</div>
+      <div class="ex-actions">
+        ${!val?`<button class="btn btn-primary" onclick="m3Validate(${ex.id})">✓ Valider</button>`:''}
+        <button class="btn" onclick="m3Next()">Suivant →</button>
+        ${fb}
+      </div>
+    </div>`;
+}
+function m3ST(tile,exId){
+  const ex=M3.find(e=>e.id===exId);if(!ex||m3Val[exId])return;
+  const ans=m3Ans[exId]||{};
+  for(let i=0;i<ex.bl.length;i++){if(!ans[i]){ans[i]=tile;m3Ans[exId]=ans;m3Render();return;}}
+}
+function m3CB(exId,bi){
+  if(m3Val[exId])return;
+  const ans=m3Ans[exId]||{};delete ans[bi];m3Ans[exId]=ans;m3Render();
+}
+function m3Validate(exId){
+  const ex=M3.find(e=>e.id===exId);if(!ex||m3Val[exId])return;
+  const ans=m3Ans[exId]||{},isFr=m3Lang==='fr';
+  if(!ex.bl.every((_,i)=>ans[i]))return;
+  m3Val[exId]=true;
+  if(ex.bl.every((b,i)=>isFr?ans[i]===b.af:ans[i]===b.ah))m3Score++;
+  document.getElementById('m3-sval').textContent=m3Score;m3Render();
+}
+function m3Next(){const l=m3Filtered();if(m3Cur<l.length-1){m3Cur++;m3Render();}else m3ShowFinal();}
+function m3Prev(){if(m3Cur>0){m3Cur--;m3Render();}}
+function m3ShowFinal(){
+  const t=m3Filtered().length,pct=Math.round(m3Score/t*100);
+  document.getElementById('m3-wrap').style.display='none';
+  const fin=document.getElementById('m3-final');fin.style.display='block';
+  document.getElementById('m3-fscore').textContent=m3Score+' / '+t;
+  const b=document.getElementById('m3-fbadge');
+  if(pct>=90){b.textContent='🏆 Excellent ! מצוין';b.style.cssText='background:var(--green-l);color:var(--green-d)';}
+  else if(pct>=70){b.textContent='👍 Très bien ! טוב מאוד';b.style.cssText='background:var(--blue-l);color:var(--blue-d)';}
+  else if(pct>=50){b.textContent='📚 Bien ! טוב';b.style.cssText='background:var(--amber-l);color:var(--amber-d)';}
+  else{b.textContent='💪 À retravailler · כדאי לחזור';b.style.cssText='background:var(--coral-l);color:var(--coral-d)';}
+}
+function m3Reset(){m3Cur=0;m3Score=0;m3Ans={};m3Val={};document.getElementById('m3-sval').textContent='0';document.getElementById('m3-pfill').style.width='0%';document.getElementById('m3-final').style.display='none';document.getElementById('m3-wrap').style.display='block';m3Render();}
+
+// ══════════════════════════════════════════════
+// MODULE 4
+// ══════════════════════════════════════════════
+let m4Lang='he',m4Cur=0,m4Score=0,m4Placed={},m4Val={},m4FP='all',m4Shuffled={};
+function m4Filtered(){return m4FP==='all'?M4:M4.filter(e=>e.p===m4FP);}
+function m4SetLang(l){m4Lang=l;document.getElementById('m4-lt-he').classList.toggle('active',l==='he');document.getElementById('m4-lt-fr').classList.toggle('active',l==='fr');m4Render();}
+function m4BuildFilters(){
+  document.getElementById('m4-filters').innerHTML=
+    ['all','P1','P2','P3','P4','P5','P6','P7','P8'].map(p=>
+      `<button class="pill${m4FP===p?' active':''}" onclick="m4Filter('${p}')">${p==='all'?'Tous':p}</button>`).join('');
+}
+function m4Filter(p){m4FP=p;m4Cur=0;m4BuildFilters();m4Render();}
+function m4GetWords(ex){
+  const isFr=m4Lang==='fr';
+  const sent=isFr?ex.fr:ex.he;
+  return sent.split(' ').filter(w=>w.length>0);
+}
+function m4Render(){
+  const list=m4Filtered(),total=list.length;
+  document.getElementById('m4-stot').textContent='/ '+total;
+  if(m4Cur>=total){m4ShowFinal();return;}
+  document.getElementById('m4-final').style.display='none';
+  document.getElementById('m4-wrap').style.display='block';
+  const ex=list[m4Cur];
+  document.getElementById('m4-nav').textContent=(m4Cur+1)+' / '+total;
+  document.getElementById('m4-pfill').style.width=(Object.keys(m4Val).length/total*100)+'%';
+  const isFr=m4Lang==='fr';
+  const words=m4GetWords(ex);
+  if(!m4Shuffled[ex.id])m4Shuffled[ex.id]=shuffle(words);
+  const shuf=m4Shuffled[ex.id];
+  const placed=m4Placed[ex.id]||[];
+  const val=m4Val[ex.id];
+  let correct=false;
+  if(val){correct=placed.join(' ')===words.join(' ');}
+  const wh=ex.wh||{};
+  const srcHtml=shuf.map((w,i)=>{
+    const isUsed=placed.includes(w)&&placed.indexOf(w)===placed.lastIndexOf(w)?placed.includes(w):placed.filter(x=>x===w).length>shuf.filter((x,j)=>j<=i&&x===w).length-1;
+    const usedCount=placed.filter(x=>x===w).length;
+    const totalCount=shuf.filter(x=>x===w).length;
+    const used=!val&&usedCount>=totalCount;
+    const tip=wh[w]||'';
+    return `<div class="m4-word${used?' used-src':''}" onclick="m4AddWord('${w.replace(/'/g,"\\'")}',${ex.id})">${w}${tip?`<span class="m4-word-tip">${tip}</span>`:''}  </div>`;
+  }).join('');
+  const zoneHtml=val?
+    words.map((w,i)=>{
+      const p=placed[i];const ok=p===w;
+      return `<div class="m4-word ${ok?'correct-w':'wrong-w'}">${p||'?'}</div>`;
+    }).join(''):
+    placed.map((w,i)=>`<div class="m4-word placed" onclick="m4RemWord(${i},${ex.id})">${w}</div>`).join('');
+  let fb='';
+  if(val){
+    if(correct)fb='<span class="ex-fb ok">✓ Parfait !</span>';
+    else{fb='<span class="ex-fb ko">✗ Incorrect</span>';fb+=`<div class="ans-reveal" style="display:block">Ordre correct : ${words.join(' ')}</div>`;}
+  }
+  document.getElementById('m4-wrap').innerHTML=`
+    <div class="m4-reconstruct">
+      <span class="ex-para-tag ${paraColor(ex.p)}">${ex.p} — ${PARA_TITLES[ex.p]}</span>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:.75rem">Reconstruisez la phrase en cliquant les mots dans l'ordre :</div>
+      <div class="m4-zone${isFr?' fr':''}${placed.length?' has-words':''}" id="m4-zone">
+        ${zoneHtml||'<span class="m4-zone-hint">Cliquez les mots ci-dessous pour les placer ici…</span>'}
+      </div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:.6rem;font-weight:600">Mots disponibles :</div>
+      <div class="m4-source${isFr?' fr':''}">${srcHtml}</div>
+      <div class="ex-actions">
+        ${!val?`<button class="btn btn-primary" onclick="m4Validate(${ex.id})">✓ Valider</button>`:''}
+        <button class="btn" onclick="m4Next()">Suivant →</button>
+        ${!val?`<button class="btn" onclick="m4ClearAll(${ex.id})">✕ Tout effacer</button>`:''}
+        ${fb}
+      </div>
+    </div>`;
+}
+function m4AddWord(w,exId){
+  if(m4Val[exId])return;
+  const p=m4Placed[exId]||[];p.push(w);m4Placed[exId]=p;m4Render();
+}
+function m4RemWord(idx,exId){
+  if(m4Val[exId])return;
+  const p=m4Placed[exId]||[];p.splice(idx,1);m4Placed[exId]=p;m4Render();
+}
+function m4ClearAll(exId){if(m4Val[exId])return;m4Placed[exId]=[];m4Render();}
+function m4Validate(exId){
+  const ex=M4.find(e=>e.id===exId);if(!ex||m4Val[exId])return;
+  const words=m4GetWords(ex),placed=m4Placed[exId]||[];
+  if(placed.length<words.length)return;
+  m4Val[exId]=true;
+  if(placed.join(' ')===words.join(' '))m4Score++;
+  document.getElementById('m4-sval').textContent=m4Score;m4Render();
+}
+function m4Next(){const l=m4Filtered();if(m4Cur<l.length-1){m4Cur++;m4Render();}else m4ShowFinal();}
+function m4Prev(){if(m4Cur>0){m4Cur--;m4Render();}}
+function m4ShowFinal(){
+  const t=m4Filtered().length,pct=Math.round(m4Score/t*100);
+  document.getElementById('m4-wrap').style.display='none';
+  const fin=document.getElementById('m4-final');fin.style.display='block';
+  document.getElementById('m4-fscore').textContent=m4Score+' / '+t;
+  const b=document.getElementById('m4-fbadge');
+  if(pct>=90){b.textContent='🏆 Excellent ! מצוין';b.style.cssText='background:var(--green-l);color:var(--green-d)';}
+  else if(pct>=70){b.textContent='👍 Très bien !';b.style.cssText='background:var(--blue-l);color:var(--blue-d)';}
+  else if(pct>=50){b.textContent='📚 Bien !';b.style.cssText='background:var(--amber-l);color:var(--amber-d)';}
+  else{b.textContent='💪 À retravailler';b.style.cssText='background:var(--coral-l);color:var(--coral-d)';}
+}
+function m4Reset(){m4Cur=0;m4Score=0;m4Placed={};m4Val={};m4Shuffled={};document.getElementById('m4-sval').textContent='0';document.getElementById('m4-pfill').style.width='0%';document.getElementById('m4-final').style.display='none';document.getElementById('m4-wrap').style.display='block';m4Render();}
+
+// ══════════════════════════════════════════════
+// MODULE 5
+// ══════════════════════════════════════════════
+let m5Level=1,m5Cur=0,m5Scores={1:0,2:0,3:0},m5Ans={},m5Val={};
+function m5Questions(){return M5.filter(q=>q.lv===m5Level);}
+function m5SetLevel(lv,el){
+  m5Level=lv;m5Cur=0;
+  document.querySelectorAll('.m5-level-card').forEach(c=>c.classList.remove('active'));
+  if(el)el.classList.add('active');
+  m5Render();
+}
+function m5Render(){
+  const qs=m5Questions(),total=qs.length;
+  if(m5Cur>=total){document.getElementById('m5-wrap').innerHTML='<div class="final-screen" style="display:block"><div class="final-big" style="color:var(--green)">'+m5Scores[m5Level]+' / '+total+'</div><div class="final-label">Score — Niveau '+m5Level+'</div><button class="btn btn-primary" onclick="m5Cur=0;m5Ans={};m5Val={};m5Render()">↺ Recommencer ce niveau</button></div>';return;}
+  const q=qs[m5Cur];
+  document.getElementById('m5-nav').textContent=(m5Cur+1)+' / '+total;
+  document.getElementById('m5-pfill').style.width=((m5Cur)/total*100)+'%';
+  ['1','2','3'].forEach(l=>{document.getElementById('m5-sc'+l).textContent=m5Scores[l]+' / 8';});
+  const val=m5Val[q.id];
+  let body='';
+  if(q.type==='free'){
+    const showSug=val;
+    body=`<textarea class="m5-free-input" id="m5-ta-${q.id}" placeholder="Écrivez votre réponse ici…">${m5Ans[q.id]||''}</textarea>
+    <div class="m5-suggestion" id="m5-sug-${q.id}" style="${showSug?'display:block':''}"><strong>Piste de réflexion :</strong><br>${q.sug}</div>
+    <div class="ex-actions" style="margin-top:.75rem">
+      ${!val?`<button class="btn btn-success" onclick="m5SaveFree(${q.id})">✓ Soumettre</button>`:''}
+      ${val?`<button class="btn" onclick="m5Next()">Suivant →</button>`:`<button class="btn" onclick="m5Next()">Passer →</button>`}
+      ${val?'':''}
+    </div>`;
+  } else {
+    const sel=m5Ans[q.id];
+    const choicesHtml=q.choices.map((c,i)=>{
+      let cls='m5-choice';
+      if(val){if(i===q.ans)cls+=' correct';else if(sel===i&&i!==q.ans)cls+=' wrong';}
+      else if(sel===i)cls+=' selected';
+      return `<div class="${cls}" onclick="${val?'':'m5Select('+q.id+','+i+')'}">${c}</div>`;
+    }).join('');
+    const expl=val?`<div class="m5-expl" style="display:block"><strong>Explication :</strong> ${q.expl}</div>`:'';
+    body=`<div class="m5-choices">${choicesHtml}</div>${expl}
+    <div class="ex-actions">
+      ${!val?`<button class="btn btn-primary" onclick="m5Validate(${q.id})">✓ Valider</button>`:''}
+      <button class="btn" onclick="m5Next()">Suivant →</button>
+    </div>`;
+  }
+  document.getElementById('m5-wrap').innerHTML=`
+    <div class="m5-q-card">
+      <span class="ex-para-tag" style="background:${m5Level===1?'var(--green-l)':m5Level===2?'var(--amber-l)':'var(--purple-l)'};color:${m5Level===1?'var(--green-d)':m5Level===2?'var(--amber-d)':'var(--purple-d)'};margin-bottom:.75rem">
+        Niveau ${m5Level} · Question ${m5Cur+1}/${total}
+      </span>
+      <div class="m5-q-text">${q.q}</div>
+      ${body}
+    </div>`;
+}
+function m5Select(qid,idx){m5Ans[qid]=idx;m5Render();}
+function m5Validate(qid){
+  const q=M5.find(x=>x.id===qid);if(!q||m5Val[qid])return;
+  m5Val[qid]=true;
+  if(m5Ans[qid]===q.ans){m5Scores[m5Level]++;document.getElementById('m5-sc'+m5Level).textContent=m5Scores[m5Level]+' / 8';}
+  m5Render();
+}
+function m5SaveFree(qid){
+  const ta=document.getElementById('m5-ta-'+qid);
+  if(ta)m5Ans[qid]=ta.value;
+  m5Val[qid]=true;m5Render();
+}
+function m5Next(){const t=m5Questions().length;if(m5Cur<t-1){m5Cur++;m5Render();}else{m5Cur=t;m5Render();}}
+function m5Prev(){if(m5Cur>0){m5Cur--;m5Render();}}
+
+// ══════════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════════
+m1Build();
+m2Build();
+m3BuildFilters();m3Render();
+m4BuildFilters();m4Render();
+m5Render();
+</script>
+</body>
+</html>
